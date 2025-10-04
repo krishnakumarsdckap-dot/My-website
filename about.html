@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </link>
+    <style>
+        * {
+        font-family: 'Montserrat', sans-serif;
+    }
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* ===========Header=========== */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .Profile {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .Profile:hover {
+            transform: scale(1.05);
+        }
+
+        .Profile .pro img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+        }
+
+        .Profile .p {
+            margin-left: 10px;
+            font-size: x-large;
+        }
+
+        .navigations {
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 15%;
+            margin-top: 1%;
+        }
+
+        .nav {
+            margin-right: 10%;
+        }
+
+        .nav:hover {
+            transform: scale(1.05);
+        }
+
+        .nav a {
+            font-size: x-large;
+        }
+
+        .nav a:hover {
+            color: #000;
+            /* text-shadow: 2px 2px gold; */
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            position: relative;
+            top: 20%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* ++++=========About_Me========++++ */
+        .about {
+            /* background-color: thistle; */
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10vh;
+            padding-top: 5vh;
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px black;
+
+        }
+
+        .about1 {
+            text-align: center;
+        }
+
+        .about2 {
+            display: flex;
+            padding: 0%;
+            margin: 0%;
+            padding-left: 5%;
+            margin-top: 2%;
+        }
+
+        .abt-1 {
+            width: 100%;
+            padding: 0%;
+        }
+
+        .p1 p {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .abt-2 img {
+            width: 50%;
+            border-radius: 15px;
+            margin-left: 25%;
+            animation: zoomIn 2s ease-in alternate;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            0% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        /* ================Footer============== */
+        footer {
+            text-align: center;
+            background-color: rgba(255, 196, 1, 0.082);
+            padding-top: 1%;
+            margin-top: 5vh;
+            padding-bottom: 1%;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            margin: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #1DA1F2;
+            /* hover color */
+        }
+
+        /* ======++++++Meadia_Query++++++===== */
+        @media (max-width:1024px) {
+            .pro p {
+                top: -1%;
+            }
+
+            .navigations {
+                margin-right: 19%;
+            }
+        }
+
+        @media (max-width:768px) {
+            .head {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width:425px) {
+
+
+            .pro p {
+                font-size: 16px;
+                margin-left: 1%;
+            }
+
+            .nav {
+                margin-right: 0%;
+            }
+
+            .nav a {
+                font-size: 16px;
+            }
+
+            .hero h1 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+                margin-left: 10%;
+            }
+
+            .pro img {
+                height: 6vh;
+                width: 6vw;
+            }
+        }
+
+        @media (max-width:320px) {
+            .navigations {
+                column-gap: 2%;
+            }
+        }
+
+        /*----------------- Animations---------------- */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        span.emoji {
+            display: inline-block;
+            animation: bouncey 2s infinite;
+        }
+
+        @keyframes bouncey {
+
+            0%,
+            50%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-8px);
+            }
+
+            60% {
+                transform: translateY(-4px);
+            }
+        }
+
+        ul li {
+            transition: all 0.3s ease;
+        }
+
+        ul li:hover {
+            color: #000000;
+            transform: translateX(5px);
+        }
+
+        .about{
+            animation: fadeUp 0.5s ease-in-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ================Header & Navigation================= -->
+    <header>
+        <div class="head">
+            <div>
+                <a href="index.html" class="Profile">
+                    <div class="pro"><img src="Assets/img.jpg" alt="My Profile"></div>
+                    <div class="p">
+                        <p>Krishnakumar</p>
+                    </div>
+                </a>
+            </div>
+            <div class="navigations">
+                <div class="nav"><a href="index.html">Home</a></div>
+                <div class="nav"><a href="about.html">About</a></div>
+                <div class="nav"><a href="project.html">Project</a></div>
+                <div class="nav"><a href="achievements.html">Achievements</a></div>
+                <div class="nav"><a href="contact.html">Contact</a></div>
+
+            </div>
+        </div>
+    </header>
+    <!-- +++++++++++=======About Page======++++++++++ -->
+    <div class="about">
+        <div class="about1">
+            <h1>About Me</h1>
+        </div>
+        <div class="about2">
+            <div class="abt-1">
+                <div class="p1">
+                    <p>Hi!👋 I'm Krishnakumar, A passionate full stack developer with experience in building web
+                        applications using modern technologies. I love turning ideas into reality through clean and
+                        efficient code.</p>
+                </div>
+                <div class="p2">
+                    <p>When I'm not coding, I enjoy photography and Traveling. Always eager to learn new skills and work
+                        on exciting projects.</p>
+                </div>
+                <div class="p3">
+                    <h2>What I do</h2>
+                    <ul>
+                        <li><span class="emoji">💻</span> Build responsive and modern websites</li>
+                    </ul>
+                    <ul>
+                        <li><span class="emoji">🎨</span> Design simple and effective user interfaces</li>
+                    </ul>
+                    <ul>
+                        <li><span class="emoji">⚡</span> Solve problems with creative solutions </li>
+                    </ul>
+                    <ul>
+                        <li><span class="emoji">📚</span> Continuously learn and explore new technologies</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="abt-2">
+                <img src="Assets/my.png" alt="Me">
+            </div>
+        </div>
+
+    </div>
+    <!-- ==========================Footer========================= -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div style="margin-top: 2%;">
+            &COPY; Copy Writted @ 2025 By K₹!$H
+        </div>
+
+    </footer>
+</body>
+
+</html>

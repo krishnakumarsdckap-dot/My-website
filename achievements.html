@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </link>
+    <style>
+        * {
+        font-family: 'Montserrat', sans-serif;
+    }
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* ===========Header=========== */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .Profile {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .Profile:hover {
+            transform: scale(1.05);
+        }
+
+        .Profile .pro img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+        }
+
+        .Profile .p {
+            margin-left: 10px;
+            font-size: x-large;
+        }
+
+        .navigations {
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 15%;
+            margin-top: 1%;
+        }
+
+        .nav {
+            margin-right: 10%;
+        }
+
+        .nav:hover {
+            transform: scale(1.05);
+        }
+
+        .nav a {
+            font-size: x-large;
+        }
+
+        .nav a:hover {
+            color: #000;
+            /* text-shadow: 2px 2px gold; */
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            position: relative;
+            top: 20%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =============Achievements============= */
+        .achievements {
+            max-width: 70%;
+            margin: auto;
+            padding: 3%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            column-gap: 10vh;
+            row-gap: 10vh;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px;
+        }
+
+        .project1 {
+            max-width: 39%;
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+            padding: 2%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px;
+        }
+
+        .p1 img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .p4 {
+            margin-top: 2%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        /* ================Footer============== */
+        footer {
+            text-align: center;
+            background-color: rgba(255, 196, 1, 0.082);
+            padding-top: 1%;
+            margin-top: 5vh;
+            padding-bottom: 1%;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            margin: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #1DA1F2;
+            /* hover color */
+        }
+
+        /* ======++++++Meadia_Query++++++===== */
+        @media (max-width:1024px) {
+            .pro p {
+                top: -1%;
+            }
+
+            .navigations {
+                margin-right: 19%;
+            }
+        }
+
+        @media (max-width:768px) {
+            .p4 {
+                flex-direction: column;
+                /* width: 100%; */
+                margin: auto;
+
+            }
+
+            .head {
+                flex-direction: column;
+            }
+
+            .project {
+                flex-direction: column;
+            }
+
+            .project1 {
+                max-width: 68%;
+                margin: auto;
+            }
+
+            .b {
+
+                width: 100%;
+            }
+        }
+
+        @media (max-width:425px) {
+
+            .project,
+            .achievements {
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-width: 90%;
+            }
+
+            .project1 {
+                width: 100%;
+            }
+
+
+            .head {
+                flex-direction: column;
+            }
+
+            .pro p {
+                font-size: 16px;
+                margin-left: 1%;
+            }
+
+            .nav {
+                margin-right: 0%;
+            }
+
+            .nav a {
+                font-size: 16px;
+             }
+
+            .hero h1 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+                margin-left: 10%;
+            }
+
+            .pro img {
+                height: 6vh;
+                width: 6vw;
+            }
+            .navigations{
+                gap: 2%;
+            }
+        }
+
+        @media (max-width:320px) {
+            .navigations {
+                column-gap: 2%;
+            }
+        }
+
+        /* Animations */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .achievements{
+            animation: fadeUp 0.5s ease-in-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ================Header & Navigation================= -->
+    <header>
+        <div class="head">
+            <div>
+                <a href="index.html" class="Profile">
+                    <div class="pro"><img src="Assets/img.jpg" alt="My Profile"></div>
+                    <div class="p">
+                        <p>Krishnakumar</p>
+                    </div>
+                </a>
+            </div>
+            <div class="navigations">
+                <div class="nav"><a href="index.html">Home</a></div>
+                <div class="nav"><a href="about.html">About</a></div>
+                <div class="nav"><a href="project.html">Project</a></div>
+                <div class="nav"><a href="achievements.html">Achievements</a></div>
+                <div class="nav"><a href="contact.html">Contact</a></div>
+
+            </div>
+        </div>
+    </header>
+    <!-- +++=====-----Achievements-----=====+++ -->
+    <h1 style="text-align: center;">ACHIEVEMENTS</h1>
+    <div class="achievements">
+        <!-- ++++Card-1++++ -->
+        <div class="project1">
+            <div class="p1"><img src="Assets/HTML Sololearn.jpg" alt="HTML"></div>
+            <div class="p5">
+                <h3>Aug 2025</h3>
+            </div>
+            <div class="p2">
+                <h3>HTML in Sololearn</h3>
+            </div>
+            <div class="p3">
+                <p>I have Completed the Introduction to HTML in Sololearn Website</p>
+            </div>
+        </div>
+        <!-- ++++Card-1++++ -->
+        <div class="project1">
+            <div class="p1"><img src="Assets/Css Sololearn.jpg" alt="CSS"></div>
+            <div class="p5">
+                <h3>Sep 2025</h3>
+            </div>
+            <div class="p2">
+                <h3>CSS in Sololearn</h3>
+            </div>
+            <div class="p3">
+                <p>I have Completed the Introduction to CSS in Sololearn Website</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- ==========================Footer========================= -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div style="margin-top: 2%;">
+            &COPY; Copy Writted @ 2025 By K₹!$H
+        </div>
+
+    </footer>
+</body>
+
+</html>

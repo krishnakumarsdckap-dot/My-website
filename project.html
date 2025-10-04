@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </link>
+    <style>
+        * {
+        font-family: 'Montserrat', sans-serif;
+    }
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* ===========Header=========== */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .Profile {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .Profile:hover {
+            transform: scale(1.05);
+        }
+
+        .Profile .pro img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+        }
+
+        .Profile .p {
+            margin-left: 10px;
+            font-size: x-large;
+        }
+
+        .navigations {
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 15%;
+            margin-top: 1%;
+        }
+
+        .nav {
+            margin-right: 10%;
+        }
+
+        .nav:hover {
+            transform: scale(1.05);
+        }
+
+        .nav a {
+            font-size: x-large;
+        }
+
+        .nav a:hover {
+            color: #000;
+            /* text-shadow: 2px 2px gold; */
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            position: relative;
+            top: 20%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*=+++++++++++++++ Project++++++++++++++= */
+        .project {
+            max-width: 70%;
+            margin: auto;
+            padding: 3%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            column-gap: 10vh;
+            row-gap: 10vh;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px;
+        }
+
+        .project1 {
+            max-width: 39%;
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+            padding: 2%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px;
+
+        }
+
+        .project1:hover {
+            transform: scale(1.02);
+            transition-duration: 0.8s;
+        }
+
+        .project1:hover img {
+            transform: scale(1.04);
+            transition-duration: 0.8s;
+        }
+
+        .project1:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .p1 img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .p4 {
+            margin-top: 2%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .b {
+            height: 5vh;
+            width: 10vw;
+            background-color: grey;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 2vh;
+
+        }
+
+        .b:hover {
+            transform: scale(1.1);
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            box-shadow: 0px 0px 10px black;
+            cursor: pointer;
+        }
+
+        .btn {
+            height: 5vh;
+            width: 10vw;
+            background-color: grey;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 2vh;
+            margin-top: 5vh;
+            position: relative;
+            left: 45%;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: rgb(255, 255, 255);
+            color: rgb(163, 159, 133);
+            box-shadow: 0px 0px 10px black;
+            cursor: pointer;
+            color: black;
+        }
+
+        /* ================Footer============== */
+        footer {
+            text-align: center;
+            background-color: rgba(255, 196, 1, 0.082);
+            padding-top: 1%;
+            margin-top: 5vh;
+            padding-bottom: 1%;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            margin: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #1DA1F2;
+            /* hover color */
+        }
+
+        /* ======++++++Meadia_Query++++++===== */
+        @media (max-width:1024px) {
+            .pro p {
+                top: -1%;
+            }
+
+            .navigations {
+                margin-right: 19%;
+            }
+        }
+
+        @media (max-width:768px) {
+            .head {
+                flex-direction: column;
+            }
+
+            .p4 {
+                flex-direction: column;
+                /* width: 100%; */
+                margin: auto;
+
+            }
+
+            .project {
+                flex-direction: column;
+            }
+
+            .project1 {
+                max-width: 68%;
+                margin: auto;
+            }
+
+            .b {
+
+                width: 100%;
+            }
+        }
+
+        @media (max-width:425px) {
+
+            .project,
+            .achievements {
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-width: 90%;
+            }
+
+            .project1 {
+                width: 100%;
+            }
+
+
+            .head {
+                flex-direction: column;
+            }
+
+            .pro p {
+                font-size: 16px;
+                margin-left: 1%;
+            }
+
+            .nav {
+                margin-right: 0%;
+            }
+
+            .nav a {
+                font-size: 16px;
+            }
+
+            .hero h1 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+                margin-left: 10%;
+            }
+
+            .pro img {
+                height: 6vh;
+                width: 6vw;
+            }
+        }
+
+        @media (max-width:320px) {
+            .navigations {
+                column-gap: 2%;
+            }
+        }
+
+        /* Animations */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .project{
+            animation: fadeUp 0.5s ease-in-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ================Header & Navigation================= -->
+    <header>
+        <div class="head">
+            <div>
+                <a href="index.html" class="Profile">
+                    <div class="pro"><img src="Assets/img.jpg" alt="My Profile"></div>
+                    <div class="p">
+                        <p>Krishnakumar</p>
+                    </div>
+                </a>
+            </div>
+            <div class="navigations">
+                <div class="nav"><a href="index.html">Home</a></div>
+                <div class="nav"><a href="about.html">About</a></div>
+                <div class="nav"><a href="project.html">Project</a></div>
+                <div class="nav"><a href="achievements.html">Achievements</a></div>
+                <div class="nav"><a href="contact.html">Contact</a></div>
+
+            </div>
+        </div>
+    </header>
+    <!-- ++++++++++++==Project==+++++++++++ -->
+    <h1 style="text-align: center;">PROJECTS</h1>
+    <div class="project">
+
+        <!-- ++++Card-1++++ -->
+        <div class="project1">
+            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Pothys/"><img src="Assets/pothys.jpg" alt="pothysmart"></a>
+            </div>
+            <div class="p2">
+                <h3>Pothys Mart Website</h3>
+            </div>
+            <div class="p3">
+                <p>Pothys Mart Website were clonned using HTML and CSS it is Responsive website</p>
+            </div>
+            <div class="p4">
+                <a href="https://krishnakumarsdckap-dot.github.io/Pothys/" target="_blank"><input type="submit"
+                        class="b" value="Page Link"></a>
+                <a href="https://github.com/krishnakumarsdckap-dot/Pothys.git" target="_blank"><input type="submit"
+                        class="b" value="GitHub Link"></a>
+            </div>
+        </div>
+        <!-- +++Card-2+++ -->
+        <div class="project1">
+            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Sunny_Cafe/" target="_blank"><img
+                        src="Assets/sunny.png" alt=""></a></div>
+            <div class="p2">
+                <h3>Sunny Cafe</h3>
+            </div>
+            <div class="p3">
+                <p>Sunny Cafe Task Using Languages HTML and CSS it is also Responsive website</p>
+            </div>
+            <div class="p4">
+                <a href="https://krishnakumarsdckap-dot.github.io/Sunny_Cafe/" target="_blank"><input type="submit"
+                        class="b" value="Page Link"></a>
+                <a href="https://github.com/krishnakumarsdckap-dot/Sunny_Cafe.git" target="_blank"><input type="submit"
+                        class="b" value="GitHub Link"></a>
+            </div>
+        </div>
+        <!-- ++++Card-3+++++ -->
+        <div class="project1">
+            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Assessment_2/" target="_blank"><img
+                        src="Assets/finpay.png" alt=""></a></div>
+            <div class="p2">
+                <h3>Capstone Project</h3>
+            </div>
+            <div class="p3">
+                <p>Capstone Project Using Languages HTML and CSS this project is clonning the finpay</p>
+            </div>
+            <div class="p4">
+                <a href="https://krishnakumarsdckap-dot.github.io/Assessment_2/" target="_blank"><input type="submit"
+                        class="b" value="Page Link"></a>
+                <a href="https://github.com/krishnakumarsdckap-dot/Assessment_2" target="_blank"><input type="submit"
+                        class="b" value="GitHub Link"></a>
+            </div>
+        </div>
+        <!-- +++++Card-4++++= -->
+        <div class="project1">
+            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Basic_HTML_Website/" target="_blank"><img
+                        src="Assets/basic.jpg" alt=""></a></div>
+            <div class="p2">
+                <h3>Basic HTML Website</h3>
+            </div>
+            <div class="p3">
+                <p>Basic HTML Website Using Languages HTML and CSS</p>
+            </div>
+            <div class="p4">
+                <a href="https://krishnakumarsdckap-dot.github.io/Basic_HTML_Website/" target="_blank"><input
+                        type="submit" class="b" value="Page Link"></a>
+                <a href="https://github.com/krishnakumarsdckap-dot/Basic_HTML_Website.git" target="_blank"><input
+                        type="submit" class="b" value="GitHub Link"></a>
+            </div>
+
+        </div>
+
+    </div>
+    <a href="achievements.html"><input type="submit" class="btn" value="My Achievements"></a>
+    <!-- <button ><a href="achievements.html"></a></button> -->
+    <!-- ==========================Footer========================= -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div style="margin-top: 2%;">
+            &COPY; Copy Writted @ 2025 By K₹!$H
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

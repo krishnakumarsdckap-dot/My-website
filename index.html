@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Fugaz+One&family=Press+Start+2P&family=Gloria+Hallelujah&family=Monoton&display=swap" rel="stylesheet"></link>
+    <style>
+        * {
+        font-family: 'Montserrat', sans-serif;
+    }
+        body {
+            background-image: url(Assets/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* ===========Header=========== */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .Profile {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .Profile:hover {
+            transform: scale(1.05);
+        }
+
+        .Profile .pro img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+        }
+
+        .Profile .p {
+            margin-left: 10px;
+            font-size: x-large;
+        }
+
+        .navigations {
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 15%;
+            margin-top: 1%;
+        }
+
+        .nav {
+            margin-right: 10%;
+        }
+
+        .nav:hover {
+            transform: scale(1.05);
+        }
+
+        .nav a {
+            font-size: x-large;
+        }
+
+        .nav a:hover {
+            color: #000;
+            /* text-shadow: 2px 2px gold; */
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            position: relative;
+            top: 20%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* ====================Home Page======================  */
+        .page1 {
+            margin: 0%;
+            padding: 0%;
+            height: 50vh;
+            padding-top: 15vh;
+            width: 100%;
+        }
+
+        .hero {
+            border: 2px solid grey;
+            color: rgb(0, 0, 0);
+            width: 50%;
+            margin: auto;
+            margin-bottom: 10vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 0px 10px;
+            border-radius: 5px;
+        }
+
+        .btn1:hover {
+            transform: scale(1.1);
+            background-color: rgb(255, 255, 255);
+            color: rgb(163, 159, 133);
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .btn1 {
+            margin-top: 10px;
+            background-color: rgb(163, 159, 133);
+            color: rgb(255, 255, 255);
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10vh;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(163, 159, 133);
+            color: rgb(255, 255, 255);
+        }
+
+        .btn1::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -75px;
+            width: 50px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: skewY(-50deg);
+        }
+
+        .btn1:hover::after {
+            animation: shine 0.8s ease-in-out;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        /* ================Footer============== */
+        footer {
+            text-align: center;
+            background-color: rgba(255, 196, 1, 0.082);
+            padding-top: 1%;
+            margin-top: 5vh;
+            padding-bottom: 1%;
+        }
+
+        .social-icons a {
+            font-size: 30px;
+            margin: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #1DA1F2;
+            /* hover color */
+        }
+
+
+        /* ++++++++=========---___Media_Query___---==========+++++++ */
+
+        @media (max-width:1024px) {
+            .pro p {
+                top: -1%;
+            }
+
+            .navigations {
+                margin-right: 19%;
+            }
+        }
+
+        @media (max-width:768px) {
+            .head {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width:425px) {
+            .head {
+                flex-direction: column;
+            }
+
+            .pro p {
+                font-size: 16px;
+                margin-left: 1%;
+            }
+
+            .nav {
+                margin-right: 0%;
+            }
+
+            .nav a {
+                font-size: 16px;
+            }
+
+            .hero h1 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+                margin-left: 10%;
+            }
+
+            .pro img {
+                height: 6vh;
+                width: 6vw;
+            }
+        }
+
+        @media (max-width:320px) {
+            .navigations {
+                column-gap: 2%;
+            }
+
+            footer {
+                margin-top: 5%;
+            }
+        }
+
+        @keyframes shine {
+            100% {
+                left: 100%;
+            }
+        }
+
+        /* Animations */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .page1 {
+            animation: fadeUp 0.5s ease-in-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- ================Header & Navigation================= -->
+    <header>
+        <div class="head">
+            <div>
+                <a href="index.html" class="Profile">
+                    <div class="pro"><img src="Assets/img.jpg" alt="My Profile"></div>
+                    <div class="p">
+                        <p>Krishnakumar</p>
+                    </div>
+                </a>
+            </div>
+            <div class="navigations">
+                <div class="nav"><a href="index.html">Home</a></div>
+                <div class="nav"><a href="about.html">About</a></div>
+                <div class="nav"><a href="project.html">Project</a></div>
+                <div class="nav"><a href="achievements.html">Achievements</a></div>
+                <div class="nav"><a href="contact.html">Contact</a></div>
+
+            </div>
+        </div>
+    </header>
+    <!-- ====================Home Page====================== -->
+    <div class="page1">
+        <section>
+            <div class="hero">
+                <h1>Krishnakumar</h1>
+                <h3>A Passionate Web Developer & Designer</h3>
+                <button class="btn1"><a href="project.html" style="color: rgb(0, 0, 0);">View My Projects</a></button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================Footer========================= -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div style="margin-top: 2%;">
+            &COPY; Copy Writted @ 2025 By K₹!$H
+        </div>
+    </footer>
+</body>
+
+</html>
