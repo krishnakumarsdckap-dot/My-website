@@ -96,13 +96,13 @@
             border-radius: 10px;
             box-shadow: 0px 0px 5px;
         }
+        
 
         .project1 {
             max-width: 39%;
             background-color: azure;
             display: flex;
             flex-direction: column;
-            padding: 2%;
             padding: 2%;
             border-radius: 10px;
             box-shadow: 0px 0px 5px;
@@ -115,11 +115,43 @@
             border: 1px solid black;
             border-radius: 10px;
         }
+        .project1:hover {
+            transform: scale(1.02);
+            transition-duration: 0.8s;
+        }
+
+        .project1:hover img {
+            transform: scale(1.04);
+            transition-duration: 0.8s;
+        }
+
+        .project1:hover {
+            background-color: rgb(255, 255, 255);
+        }
 
         .p4 {
             margin-top: 2%;
             display: flex;
             justify-content: space-evenly;
+            height: 5vh;
+            
+        }
+        .b {
+            height: 5vh;
+            width: 10vw;
+            background-color: grey;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 2vh;
+
+        }
+
+        .b:hover {
+            transform: scale(1.1);
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            box-shadow: 0px 0px 10px black;
+            cursor: pointer;
         }
 
         /* ================Footer============== */
@@ -173,12 +205,9 @@
             .project1 {
                 max-width: 68%;
                 margin: auto;
+                padding-bottom: 5%;
             }
 
-            .b {
-
-                width: 100%;
-            }
         }
 
         @media (max-width:425px) {
@@ -192,6 +221,7 @@
 
             .project1 {
                 width: 100%;
+                padding-bottom: 5%;
             }
 
 
@@ -226,14 +256,25 @@
                 width: 6vw;
             }
             .navigations{
-                gap: 2%;
+                column-gap: 6%;
+            }
+            .b{
+                width: 15vw;
+                
             }
         }
 
         @media (max-width:320px) {
+            .project1{
+                padding-bottom: 8%;
+            }
             .navigations {
                 column-gap: 2%;
             }
+            .nav1{
+                display: none;
+            }
+
         }
 
         /* Animations */
@@ -291,7 +332,7 @@
                 <div class="nav"><a href="index.html">Home</a></div>
                 <div class="nav"><a href="about.html">About</a></div>
                 <div class="nav"><a href="project.html">Project</a></div>
-                <div class="nav"><a href="achievements.html">Achievements</a></div>
+                <div class="nav nav1"><a href="achievements.html">Achievements</a></div>
                 <div class="nav"><a href="contact.html">Contact</a></div>
 
             </div>
@@ -312,6 +353,9 @@
             <div class="p3">
                 <p>I have Completed the Introduction to HTML in Sololearn Website</p>
             </div>
+            <div class="p4">
+                <a href=""><input type="submit" value="View" class="b"></a>
+            </div>
         </div>
         <!-- ++++Card-1++++ -->
         <div class="project1">
@@ -325,16 +369,19 @@
             <div class="p3">
                 <p>I have Completed the Introduction to CSS in Sololearn Website</p>
             </div>
+            <div class="p4">
+                <a href=""><input type="submit" value="View" class="b"></a>
+            </div>
         </div>
 
     </div>
     <!-- ==========================Footer========================= -->
     <footer>
         <div class="social-icons">
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
         <div style="margin-top: 2%;">
             &COPY; Copy Writted @ 2025 By K₹!$H

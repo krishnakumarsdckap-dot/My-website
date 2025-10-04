@@ -166,9 +166,9 @@
             text-decoration: none;
         }
 
-        .social-icons a:hover {
+        .social-icons a i:hover {
             color: #1DA1F2;
-            /* hover color */
+            
         }
 
 
@@ -221,6 +221,9 @@
                 height: 6vh;
                 width: 6vw;
             }
+            .navigations{
+                column-gap: 6%;
+            }
         }
 
         @media (max-width:320px) {
@@ -229,8 +232,12 @@
             }
 
             footer {
-                margin-top: 5%;
+                margin-top: 40%;
             }
+            .nav1{
+                display: none;
+            }
+            
         }
 
         @keyframes shine {
@@ -296,7 +303,7 @@
                 <div class="nav"><a href="index.html">Home</a></div>
                 <div class="nav"><a href="about.html">About</a></div>
                 <div class="nav"><a href="project.html">Project</a></div>
-                <div class="nav"><a href="achievements.html">Achievements</a></div>
+                <div class="nav nav1"><a href="achievements.html">Achievements</a></div>
                 <div class="nav"><a href="contact.html">Contact</a></div>
 
             </div>
