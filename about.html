@@ -9,12 +9,16 @@
     </link>
     <style>
         * {
-        font-family: 'Montserrat', sans-serif;
-    }
+            font-family: 'Montserrat', sans-serif;
+        }
+
         body {
             margin: 0%;
             padding: 0%;
+            background: linear-gradient(135deg, #f9fafc, #e6e9ef);
+            color: #1a1a1a;
         }
+
 
         /* ===========Header=========== */
         .head {
@@ -33,14 +37,14 @@
         }
 
         .Profile:hover {
-            transform: scale(1.05);
+            transform: scale(1.95);
+            transition: all 0.3s ease;
         }
 
         .Profile .pro img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-
         }
 
         .Profile .p {
@@ -69,7 +73,6 @@
 
         .nav a:hover {
             color: #000;
-            /* text-shadow: 2px 2px gold; */
         }
 
         .nav a {
@@ -85,7 +88,7 @@
 
         /* ++++=========About_Me========++++ */
         .about {
-            /* background-color: thistle; */
+            justify-content: center;
             width: 80%;
             margin: auto;
             display: flex;
@@ -94,7 +97,6 @@
             padding-top: 5vh;
             border-radius: 15px;
             box-shadow: 0px 0px 5px black;
-
         }
 
         .about1 {
@@ -103,20 +105,55 @@
 
         .about2 {
             display: flex;
-            padding: 0%;
+            flex-direction: row;
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-top: 2%;
+            justify-content: space-between;
+        }
+
+        .hero {
+            display: flex;
+            padding: 5%;
             margin: 0%;
-            padding-left: 5%;
             margin-top: 2%;
         }
 
+        .p {
+            display: flex;
+            flex-direction: column;
+            padding-top: 2%;
+        }
+
         .abt-1 {
-            width: 100%;
-            padding: 0%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
         }
 
         .p1 p {
             padding: 0%;
             margin: 0%;
+        }
+
+        .p3 {
+            line-height: 25px;
+        }
+
+        .p5 {
+            line-height: 25px;
+        }
+
+        .p4 {
+            margin: auto;
+        }
+
+        .p4 img {
+            height: 400px;
+            margin-top: 6%;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 15px;
         }
 
         .abt-2 img {
@@ -125,28 +162,27 @@
             margin-left: 25%;
             animation: zoomIn 2s ease-in alternate;
         }
-        .abt-2 img:hover{
+
+        .abt-2 img:hover {
             transform: scale(1.01);
-        } 
+        }
 
         @keyframes zoomIn {
             from {
                 transform: scale(0.1);
                 opacity: 0;
+                transform: rotate(180deg);
             }
 
             to {
                 transform: scale(1);
                 opacity: 1;
-            }
-
-            0% {
-                transform: rotate(180deg);
-            }
-
-            100% {
                 transform: rotate(360deg);
             }
+
+            0% {}
+
+            100% {}
         }
 
 
@@ -168,7 +204,6 @@
 
         .social-icons a:hover {
             color: #1DA1F2;
-            /* hover color */
         }
 
         /* ======++++++Meadia_Query++++++===== */
@@ -186,10 +221,26 @@
             .head {
                 flex-direction: column;
             }
+
+            .abt-2 img {
+                width: 30%;
+                margin-left: 33%;
+            }
+
+            .abt-1 {
+                flex-direction: column;
+            }
+
+            .about2 {
+                align-items: center;
+                flex-direction: column-reverse;
+            }
         }
 
         @media (max-width:425px) {
-
+            .hero {
+                flex-direction: column;
+            }
 
             .pro p {
                 font-size: 16px;
@@ -217,16 +268,28 @@
                 height: 6vh;
                 width: 6vw;
             }
+
             .navigations {
                 column-gap: 6%;
+            }
+
+            .about2 {
+                align-items: center;
+                flex-direction: column-reverse;
+                padding: 0%;
             }
         }
 
         @media (max-width:320px) {
             .navigations {
-                column-gap: 2%;
+                column-gap: 3%;
             }
-            .nav1{
+
+            .nav2 {
+                display: none;
+            }
+
+            .nav1 {
                 display: none;
             }
         }
@@ -284,7 +347,7 @@
             transform: translateX(5px);
         }
 
-        .about{
+        .about {
             animation: fadeUp 0.5s ease-in-out;
         }
 
@@ -315,12 +378,11 @@
                 </a>
             </div>
             <div class="navigations">
-                <div class="nav"><a href="index.html">Home</a></div>
-                <div class="nav"><a href="about.html">About</a></div>
-                <div class="nav"><a href="project.html">Project</a></div>
-                <div class="nav nav1"><a href="achievements.html">Achievements</a></div>
-                <div class="nav"><a href="contact.html">Contact</a></div>
-
+                <div class="nav nav1"><a href="index.html">Home</a></div>
+                <div class="nav nav2"><a href="about.html">About</a></div>
+                <div class="nav nav3"><a href="project.html">Project</a></div>
+                <div class="nav nav4"><a href="achievements.html">Achievements</a></div>
+                <div class="nav nav5"><a href="contact.html">Contact</a></div>
             </div>
         </div>
     </header>
@@ -329,36 +391,58 @@
         <div class="about1">
             <h1>About Me</h1>
         </div>
-        <div class="about2">
-            <div class="abt-1">
-                <div class="p1">
-                    <p>Hi!👋 I'm Krishnakumar, A passionate full stack developer with experience in building web
-                        applications using modern technologies. I love turning ideas into reality through clean and
-                        efficient code.</p>
-                </div>
-                <div class="p2">
-                    <p>When I'm not coding, I enjoy photography and Traveling. Always eager to learn new skills and work
-                        on exciting projects.</p>
-                </div>
-                <div class="p3">
-                    <h2>What I do</h2>
-                    <ul>
-                        <li><span class="emoji">💻</span> Build responsive and modern websites</li>
-                    </ul>
-                    <ul>
-                        <li><span class="emoji">🎨</span> Design simple and effective user interfaces</li>
-                    </ul>
-                    <ul>
-                        <li><span class="emoji">⚡</span> Solve problems with creative solutions </li>
-                    </ul>
-                    <ul>
-                        <li><span class="emoji">📚</span> Continuously learn and explore new technologies</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="hero">
             <div class="abt-2">
                 <img src="Assets/my.png" alt="Me">
             </div>
+            <div class="p">
+                <div class="p1">
+                    <p>Hi, I'm <strong>Krishnakumar</strong> — a passionate Full Stack Developer who enjoys crafting
+                        modern, efficient, and user-focused web applications. I thrive on turning ideas into scalable
+                        digital solutions through clean and maintainable code.</p>
+
+                    <p>Beyond coding, I’m curious by nature — exploring design, automation, and emerging technologies. I
+                        love blending creativity and logic to build experiences that make an impact.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="about2">
+            <div class="abt-1">
+                <div class="p3">
+                    <h2>What I Do</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-code"></i> Develop responsive and high-performance web applications
+                        </li>
+                        <li><i class="fa-solid fa-paintbrush"></i> Create intuitive and aesthetically pleasing user
+                            interfaces</li>
+                        <li><i class="fa-solid fa-gears"></i> Build scalable back-end systems with clean architecture
+                        </li>
+                        <li><i class="fa-solid fa-flask"></i> Experiment with modern frameworks and development tools
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="p5">
+                    <h2>My Goals</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-rocket"></i> Advance as a proficient full stack engineer</li>
+                        <li><i class="fa-solid fa-people-group"></i> Contribute to impactful open-source and community
+                            projects</li>
+                        <li><i class="fa-solid fa-handshake"></i> Collaborate with creative teams to build innovative
+                            solutions</li>
+                        <li><i class="fa-solid fa-lightbulb"></i> Continuously refine my skills and explore emerging
+                            technologies</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="p4">
+                <img src="Assets/img.jpg" alt="Me">
+            </div>
+
+
         </div>
 
     </div>
@@ -367,8 +451,10 @@
         <div class="social-icons">
             <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
         </div>
         <div style="margin-top: 2%;">
             &COPY; Copy Writted @ 2025 By K₹!$H

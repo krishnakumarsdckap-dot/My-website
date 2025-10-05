@@ -9,11 +9,14 @@
     </link>
     <style>
         * {
-        font-family: 'Montserrat', sans-serif;
-    }
+            font-family: 'Montserrat', sans-serif;
+        }
+
         body {
             margin: 0%;
             padding: 0%;
+            background: linear-gradient(135deg, #f9fafc, #e6e9ef);
+            color: #1a1a1a;
         }
 
         /* ===========Header=========== */
@@ -221,6 +224,11 @@
 
             }
 
+            .btn {
+                width: 25%;
+                left: 38%;
+            }
+
             .project {
                 flex-direction: column;
             }
@@ -249,6 +257,10 @@
                 width: 100%;
             }
 
+            .btn {
+                width: 35%;
+                left: 32%;
+            }
 
             .head {
                 flex-direction: column;
@@ -280,6 +292,7 @@
                 height: 6vh;
                 width: 6vw;
             }
+
             .navigations {
                 column-gap: 6%;
             }
@@ -287,17 +300,20 @@
 
         @media (max-width:320px) {
             .navigations {
-                column-gap: 2%;
+                column-gap: 3%;
             }
-            .b{
-                height: 10vh;
+
+            .b {
+                height: 5vh;
             }
-            .btn{
-                height: 15vh;
+
+            .btn {
                 width: 37vw;
                 left: 31%;
             }
-            .nav1{
+
+            .nav1,
+            .nav3 {
                 display: none;
             }
         }
@@ -323,7 +339,8 @@
                 transform: translateY(0);
             }
         }
-        .project{
+
+        .project {
             animation: fadeUp 0.5s ease-in-out;
         }
 
@@ -354,12 +371,11 @@
                 </a>
             </div>
             <div class="navigations">
-                <div class="nav"><a href="index.html">Home</a></div>
-                <div class="nav"><a href="about.html">About</a></div>
-                <div class="nav"><a href="project.html">Project</a></div>
-                <div class="nav nav1"><a href="achievements.html">Achievements</a></div>
-                <div class="nav"><a href="contact.html">Contact</a></div>
-
+                <div class="nav nav1"><a href="index.html">Home</a></div>
+                <div class="nav nav2"><a href="about.html">About</a></div>
+                <div class="nav nav3"><a href="project.html">Project</a></div>
+                <div class="nav nav4"><a href="achievements.html">Achievements</a></div>
+                <div class="nav nav5"><a href="contact.html">Contact</a></div>
             </div>
         </div>
     </header>
@@ -369,7 +385,8 @@
 
         <!-- ++++Card-1++++ -->
         <div class="project1">
-            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Pothys/"><img src="Assets/pothys.jpg" alt="pothysmart"></a>
+            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Pothys/"><img src="Assets/pothys.jpg"
+                        alt="pothysmart"></a>
             </div>
             <div class="p2">
                 <h3>Pothys Mart Website</h3>
@@ -445,8 +462,10 @@
         <div class="social-icons">
             <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
         </div>
         <div style="margin-top: 2%;">
             &COPY; Copy Writted @ 2025 By K₹!$H

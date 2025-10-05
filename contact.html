@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </link>
     <style>
         * {
-        font-family: 'Montserrat', sans-serif;
-    }
+            font-family: 'Montserrat', sans-serif;
+        }
+
         body {
             margin: 0%;
             padding: 0%;
+            background: linear-gradient(135deg, #f9fafc, #e6e9ef);
+            color: #1a1a1a;
         }
 
         /* ===========Header=========== */
@@ -80,9 +84,10 @@
 
         a {
             text-decoration: none;
-            
+
         }
-        .details span a{
+
+        .details span a {
             color: blue;
         }
 
@@ -93,7 +98,7 @@
             margin-top: 10vh;
             border-radius: 10px;
             box-shadow: 0px 0px 10px;
-        }   
+        }
 
         h1 {
             text-align: center;
@@ -116,6 +121,7 @@
             border-radius: 5px;
             border: 1px solid rgb(0, 0, 0);
         }
+
         textarea {
             width: 98%;
             height: 10vh;
@@ -225,86 +231,94 @@
             .details {
                 margin-left: 22%;
             }
+
             .navigations {
                 column-gap: 6%;
+            }
+
+            .details {
+                font-size: small;
             }
         }
 
         @media (max-width:320px) {
             .navigations {
-                column-gap: 2%;
+                column-gap: 3%;
             }
 
             .details {
-                margin-left: 8%;
+                margin-left: 5%;
             }
-            .nav1{
+
+            .nav1 {
                 display: none;
             }
+
         }
-/*  */
-.head {
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0px 0px 5px black;
-    animation: slideDown 0.5s ease-in-out;
-}
 
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        /*  */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
+            animation: slideDown 0.5s ease-in-out;
+        }
 
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
 
-input:focus, textarea:focus {
-    outline: none;
-    transition: 0.3s;
-    box-shadow: 0px 0px 5px ;
-}
-.social-icons a {
-    font-size: 30px;
-    margin: 10px;
-    color: #333;
-    text-decoration: none;
-    transition: transform 0.4s ease, color 0.3s;
-}
-
-.social-icons a:hover {
-    transform: rotate(360deg) scale(1.2);
-    color: #1DA1F2;
-}
-.contact {
-    max-width: 80%;
-    margin: auto;
-    margin-top: 10vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px;
-    animation: fadeUp 0.5s ease-in-out;
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
 
+        input:focus,
+        textarea:focus {
+            outline: none;
+            transition: 0.3s;
+            box-shadow: 0px 0px 5px;
+        }
 
+        .social-icons a {
+            font-size: 30px;
+            margin: 10px;
+            color: #333;
+            text-decoration: none;
+            transition: transform 0.4s ease, color 0.3s;
+        }
 
+        .social-icons a:hover {
+            transform: rotate(360deg) scale(1.2);
+            color: #1DA1F2;
+        }
 
+        .contact {
+            max-width: 80%;
+            margin: auto;
+            margin-top: 10vh;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px;
+            animation: fadeUp 0.5s ease-in-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 
@@ -321,12 +335,11 @@ input:focus, textarea:focus {
                 </a>
             </div>
             <div class="navigations">
-                <div class="nav"><a href="index.html">Home</a></div>
-                <div class="nav"><a href="about.html">About</a></div>
-                <div class="nav"><a href="project.html">Project</a></div>
-                <div class="nav nav1"><a href="achievements.html">Achievements</a></div>
-                <div class="nav"><a href="contact.html">Contact</a></div>
-
+                <div class="nav nav1"><a href="index.html">Home</a></div>
+                <div class="nav nav2"><a href="about.html">About</a></div>
+                <div class="nav nav3"><a href="project.html">Project</a></div>
+                <div class="nav nav4"><a href="achievements.html">Achievements</a></div>
+                <div class="nav nav5"><a href="contact.html">Contact</a></div>
             </div>
         </div>
     </header>
@@ -336,17 +349,18 @@ input:focus, textarea:focus {
             <form action="">
                 <!-- Name -->
                 <div class="label"><label for="name">Name</label></div>
-                <div class="input" ><input type="text" placeholder="Your Full Name" id="name" required></div>
+                <div class="input"><input type="text" placeholder="Your Full Name" id="name" required></div>
                 <!-- Phone -->
                 <div class="label"><label for="phone">Phone</label></div>
-                <div class="input" ><input type="tel" maxlength="10" placeholder="Your Phone Number" id="phone" required>
+                <div class="input"><input type="tel" maxlength="10" placeholder="Your Phone Number" id="phone" required>
                 </div>
                 <!-- Email -->
                 <div class="label"><label for="email">Email</label></div>
-                <div class="input" ><input type="email" placeholder="Your Email Address" id="email" required></div>
+                <div class="input"><input type="email" placeholder="Your Email Address" id="email" required></div>
                 <!-- Message -->
                 <div class="label"><label for="message">Message</label></div>
-                <div class="input" ><textarea name="textarea" id="message" placeholder="Message" id="message" required></textarea></div>
+                <div class="input"><textarea name="textarea" id="message" placeholder="Message" id="message"
+                        required></textarea></div>
                 <!-- button -->
                 <div> <button class="btn1">Send Message</button></div>
             </form>
@@ -366,8 +380,10 @@ input:focus, textarea:focus {
         <div class="social-icons">
             <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
         </div>
         <div style="margin-top: 2%;">
             &COPY; Copy Writted @ 2025 By K₹!$H
