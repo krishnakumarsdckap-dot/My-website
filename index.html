@@ -113,6 +113,7 @@
             align-items: center;
             box-shadow: 0px 0px 10px;
             border-radius: 5px;
+            text-align: center;
         }
 
         .btn1:hover {
@@ -193,6 +194,10 @@
             .head {
                 flex-direction: column;
             }
+
+            .krish {
+                max-width: 210px;
+            }
         }
 
         @media (max-width:425px) {
@@ -213,13 +218,8 @@
                 font-size: 16px;
             }
 
-            .hero h1 {
-                font-size: 20px;
-            }
-
             h3 {
                 font-size: 18px;
-                margin-left: 10%;
             }
 
             .pro img {
@@ -230,13 +230,12 @@
             .navigations {
                 column-gap: 6%;
             }
-        }
 
-        @media (max-width:425px) {
             .nav1 {
                 display: none;
             }
         }
+
 
         @media (max-width:320px) {
             .navigations {
@@ -245,11 +244,6 @@
 
             footer {
                 margin-top: 40%;
-            }
-
-            .nav1,
-            .nav3 {
-                display: none;
             }
 
         }
@@ -304,7 +298,7 @@
     <!-- ================Header & Navigation================= -->
     <header>
         <div class="head">
-            <div>
+            <div class="krish">
                 <a href="index.html" class="Profile">
                     <div class="pro"><img src="Assets/img.jpg" alt="My Profile"></div>
                     <div class="p">
