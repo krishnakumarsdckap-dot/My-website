@@ -23,10 +23,13 @@
 
 
         /* ===========Header=========== */
-        .head {
+       .head {
             display: flex;
             justify-content: space-between;
-            padding: 1%;
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-top: 1.3%;
+            padding-bottom: 2%;
             background-color: rgba(255, 255, 255, 0);
             box-shadow: 0px 0px 5px black;
         }
@@ -36,17 +39,18 @@
             align-items: center;
             text-decoration: none;
             color: black;
+            padding-top: 3%;
         }
 
         .Profile:hover {
             transform: scale(1.05);
-            transition: all 0.3s ease;
         }
 
         .Profile .pro img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
+
         }
 
         .Profile .p {
@@ -69,10 +73,6 @@
             transform: scale(1.05);
         }
 
-        .nav a {
-            font-size: large;
-        }
-
         .nav a:hover {
             color: #000;
         }
@@ -82,11 +82,13 @@
             color: rgb(0, 0, 0);
             position: relative;
             top: 20%;
+            font-size: large;
         }
 
         a {
             text-decoration: none;
         }
+
 
         /* ++++=========About_Me========++++ */
         .about {
@@ -144,7 +146,6 @@
         .p4 img {
             height: 400px;
             margin-top: 6%;
-            object-fit: cover;
             width: 100%;
             border-radius: 15px;
             margin-left: 10%;
@@ -155,18 +156,11 @@
             border-radius: 15px;
             margin-left: 25%;
             object-fit: cover;
-            animation: zoomIn 2s ease-in alternate;
-        }
-
-        @keyframes zoomIn {
-            0% {}
-
-            100% {}
         }
 
         .abt-2 img:hover,
         .p4:hover {
-            transform: scale(1.02);
+            transform: scale(1.03);
         }
 
         /* ================Footer============== */
@@ -292,13 +286,6 @@
         }
 
         /*----------------- Animations---------------- */
-        .head {
-            display: flex;
-            justify-content: space-between;
-            padding: 1%;
-            background-color: rgba(255, 255, 255, 0);
-            box-shadow: 0px 0px 5px black;
-        }
 
         ul li {
             transition: all 0.3s ease;
@@ -384,7 +371,7 @@
                 <div class="p5">
                     <h2>My Goals</h2>
                     <ul>
-                        <li><i class="fa-solid fa-rocket"></i> Advance as a proficient full stack engineer</li>
+                        <li><i class="fa-solid fa-rocket"></i> Advance as a proficient full stack engineer and waiting for my best position</li>
                         <li><i class="fa-solid fa-people-group"></i> Contribute to impactful open-source and community
                             projects</li>
                         <li><i class="fa-solid fa-handshake"></i> Collaborate with creative teams to build innovative
