@@ -15,8 +15,9 @@
         body {
             margin: 0%;
             padding: 0%;
-            background: linear-gradient(135deg, #f9fafc, #e6e9ef);
-            color: #1a1a1a;
+            background-image: url(Assets/downlod.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         /* ===========Header=========== */
@@ -67,7 +68,7 @@
         }
 
         .nav a {
-            font-size: x-large;
+            font-size: large;
         }
 
         .nav a:hover {
@@ -88,7 +89,8 @@
         }
 
         .details span a {
-            color: blue;
+            color: gray;
+
         }
 
         /* +++++++++++=Contact============= */
@@ -129,7 +131,7 @@
         }
 
         .btn1 {
-            background-color: rgb(163, 159, 133);
+            background-color: gray;
             color: rgb(255, 255, 255);
             height: 35px;
             border: none;
@@ -137,14 +139,21 @@
             margin-bottom: 5vh;
             text-align: center;
             padding: 0%;
-            width: 100%;
+            width: 99%;
         }
 
-        .btn1:hover {
+        .btn1:hover,
+        .down-button:hover {
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
             box-shadow: 0px 0px 10px black;
             cursor: pointer;
+        }
+
+        .btn1:focus,
+        .down-button:focus {
+            background-color: rgb(213, 255, 200);
+            color: rgb(0, 0, 0);
         }
 
         .details {
@@ -154,13 +163,25 @@
             flex-direction: column;
         }
 
+        .down-button {
+            width: 30%;
+            height: 30px;
+            background-color: gray;
+            color: #ffffff;
+            border-radius: 5px;
+            padding-left: 5%;
+            padding-top: 2%;
+            margin-bottom: 5%;
+        }
+
         /* ================Footer============== */
         footer {
             text-align: center;
-            background-color: rgba(255, 196, 1, 0.082);
             padding-top: 1%;
             margin-top: 5vh;
             padding-bottom: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
         }
 
         .social-icons a {
@@ -189,6 +210,10 @@
         @media (max-width:768px) {
             .head {
                 flex-direction: column;
+            }
+
+            .navigations {
+                margin-left: 15%;
             }
 
             .krish {
@@ -253,6 +278,11 @@
         @media (max-width:320px) {
             .navigations {
                 column-gap: 3%;
+                margin-left: 6%;
+            }
+
+            .Profile p {
+                font-size: 18px;
             }
 
             .details {
@@ -272,27 +302,14 @@
             padding: 1%;
             background-color: rgba(255, 255, 255, 0);
             box-shadow: 0px 0px 5px black;
-            animation: slideDown 0.5s ease-in-out;
         }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
 
         input:focus,
         textarea:focus {
             outline: none;
+            /* border: none; */
             transition: 0.3s;
-            box-shadow: 0px 0px 5px;
+            box-shadow: 0px 0px 8px;
         }
 
         .social-icons a {
@@ -314,13 +331,13 @@
             margin-top: 10vh;
             border-radius: 10px;
             box-shadow: 0px 0px 10px;
-            animation: fadeUp 0.5s ease-in-out;
+            animation: fadeUp 1s ease-in-out;
         }
 
         @keyframes fadeUp {
             from {
                 opacity: 0;
-                transform: translateY(100px);
+                transform: translateY(200px);
             }
 
             to {
@@ -352,10 +369,11 @@
             </div>
         </div>
     </header>
+    <!-- +++++=====Contact=====+++++ -->
     <div class="contact ">
         <h1>Contact Me</h1>
         <div class="form">
-            <form action="">
+            <form>
                 <!-- Name -->
                 <div class="label"><label for="name">Name</label></div>
                 <div class="input"><input type="text" placeholder="Your Full Name" id="name" required></div>
@@ -374,7 +392,6 @@
                 <div> <button class="btn1">Send Message</button></div>
             </form>
 
-
         </div>
         <div class="details">
             <p>Email:<span><a
@@ -382,13 +399,19 @@
             </p>
             <p>Connect: <span><a href="https://github.com/krishnakumarsdckap-dot"> GitHub</a></span></p>
             <p>Phone: <span><a href="tel:+91 88070244066">+91 88070244066</a></span></p>
+            <a href="Assets/krish resume.pdf" class="down-button" download="Krishnakumar Resume">Download Resume<i
+                    class="fas fa-download" style="margin-left: 2%;"></i></a>
         </div>
     </div>
+    <script>
+
+
+    </script>
     <!-- ==========================Footer========================= -->
     <footer>
         <div class="social-icons">
             <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/krish_ram_twinz/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i
                     class="fab fa-facebook"></i></a>
             <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i

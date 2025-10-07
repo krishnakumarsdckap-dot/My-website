@@ -15,8 +15,9 @@
         body {
             margin: 0%;
             padding: 0%;
-            background: linear-gradient(135deg, #f9fafc, #e6e9ef);
-            color: #1a1a1a;
+            background-image: url(Assets/downlod.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         /* ===========Header=========== */
@@ -67,7 +68,7 @@
         }
 
         .nav a {
-            font-size: x-large;
+            font-size: large;
         }
 
         .nav a:hover {
@@ -103,7 +104,7 @@
 
         .project1 {
             max-width: 39%;
-            background-color: azure;
+            background-color: #c5c3c379;
             display: flex;
             flex-direction: column;
             padding: 2%;
@@ -130,7 +131,7 @@
         }
 
         .project1:hover {
-            background-color: rgb(255, 255, 255);
+            background-color: #F2F2F2;
         }
 
         .p4 {
@@ -162,7 +163,8 @@
         /* ================Footer============== */
         footer {
             text-align: center;
-            background-color: rgba(255, 196, 1, 0.082);
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
             padding-top: 1%;
             margin-top: 5vh;
             padding-bottom: 1%;
@@ -192,6 +194,10 @@
         }
 
         @media (max-width:768px) {
+            .navigations {
+                margin-left: 15%;
+            }
+
             .p4 {
                 flex-direction: column;
                 /* width: 100%; */
@@ -270,8 +276,6 @@
 
             }
 
-
-
             .nav1 {
                 display: none;
             }
@@ -283,8 +287,13 @@
                 padding-bottom: 8%;
             }
 
+            .Profile p {
+                font-size: 18px;
+            }
+
             .navigations {
                 column-gap: 3%;
+                margin-left: 6%;
             }
 
 
@@ -297,34 +306,21 @@
             padding: 1%;
             background-color: rgba(255, 255, 255, 0);
             box-shadow: 0px 0px 5px black;
-            animation: slideDown 0.5s ease-in-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         .achievements {
-            animation: fadeUp 0.5s ease-in-out;
+            animation: fadeUp 1s ease-in-out;
         }
 
         @keyframes fadeUp {
-            from {
+            0% {
                 opacity: 0;
-                transform: translateY(100px);
+                transform: translateX(200px);
             }
 
-            to {
+            100% {
                 opacity: 1;
-                transform: translateY(0);
+                transform: translateX(0);
             }
         }
     </style>
@@ -354,9 +350,49 @@
     <!-- +++=====-----Achievements-----=====+++ -->
     <h1 style="text-align: center;">ACHIEVEMENTS</h1>
     <div class="achievements">
+        
+         <!-- ++++Card-1++++ -->
+        <div class="project1">
+            <div class="p1"><a href="Assets/nandhan.jpg"><img src="Assets/nandhan.jpg" alt="I"></a></div>
+            <div class="p5">
+                <h3></h3>
+            </div>
+            <div class="p2">
+                <h3>First rank in I standard</h3>
+            </div>
+            <div class="p3">
+                <p>I studied in B.K.M.School thiruporur,I get First rank in my first standard</p>
+            </div>
+            <div class="p4">
+                <a href="Assets/nandhan.jpg"><input type="submit" value="View" class="b"></a>
+            </div>
+        </div>
+         <!-- ++++Card-2++++ -->
+        <div class="project1">
+            <div class="p1"><img src="" alt="HTML"></div>
+            <div class="p5">
+                <h3></h3>
+            </div>
+            <div class="p2">
+                <h3>First rank in  standard</h3>
+            </div>
+            <div class="p3">
+                <p>I studied in A.V.M.School thiruporur,I get First rank in my Tenth standard</p>
+            </div>
+            <div class="p4">
+                <a href="Assets/"><input type="submit" value="View" class="b"></a>
+            </div>
+        </div>
+
+    </div>
+    <!-- ++++++--Certificates--++++= -->
+
+        <h1 style="text-align: center;">CERTIFICATES</h1>
+
+    <div class="achievements">
         <!-- ++++Card-1++++ -->
         <div class="project1">
-            <div class="p1"><img src="Assets/HTML Sololearn.jpg" alt="HTML"></div>
+            <div class="p1"><a href="Assets/HTML Sololearn.jpg"><img src="Assets/HTML Sololearn.jpg" alt="HTML"></a></div>
             <div class="p5">
                 <h3>Aug 2025</h3>
             </div>
@@ -367,12 +403,12 @@
                 <p>I have Completed the Introduction to HTML in Sololearn Website</p>
             </div>
             <div class="p4">
-                <a href=""><input type="submit" value="View" class="b"></a>
+                <a href="Assets/HTML.pdf"><input type="submit" value="View" class="b"></a>
             </div>
         </div>
-        <!-- ++++Card-1++++ -->
+        <!-- ++++Card-2++++ -->
         <div class="project1">
-            <div class="p1"><img src="Assets/Css Sololearn.jpg" alt="CSS"></div>
+            <div class="p1"><a href="Assets/Css Sololearn.jpg"><img src="Assets/Css Sololearn.jpg" alt="CSS"></a></div>
             <div class="p5">
                 <h3>Sep 2025</h3>
             </div>
@@ -383,16 +419,17 @@
                 <p>I have Completed the Introduction to CSS in Sololearn Website</p>
             </div>
             <div class="p4">
-                <a href=""><input type="submit" value="View" class="b"></a>
+                <a href="Assets/CSS.pdf"><input type="submit" value="View" class="b"></a>
             </div>
         </div>
 
     </div>
+
     <!-- ==========================Footer========================= -->
     <footer>
         <div class="social-icons">
             <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/krish_ram_twinz/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i
                     class="fab fa-facebook"></i></a>
             <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i

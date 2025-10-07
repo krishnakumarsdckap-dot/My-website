@@ -15,8 +15,10 @@
         body {
             margin: 0%;
             padding: 0%;
-            background: linear-gradient(135deg, #f9fafc, #e6e9ef);
-            color: #1a1a1a;
+            background-image: url(Assets/downlod.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
         }
 
 
@@ -37,7 +39,7 @@
         }
 
         .Profile:hover {
-            transform: scale(1.95);
+            transform: scale(1.05);
             transition: all 0.3s ease;
         }
 
@@ -68,7 +70,7 @@
         }
 
         .nav a {
-            font-size: x-large;
+            font-size: large;
         }
 
         .nav a:hover {
@@ -89,7 +91,7 @@
         /* ++++=========About_Me========++++ */
         .about {
             justify-content: center;
-            width: 80%;
+            max-width: 70%;
             margin: auto;
             display: flex;
             flex-direction: column;
@@ -119,28 +121,19 @@
             margin-top: 2%;
         }
 
-        .p {
-            display: flex;
-            flex-direction: column;
-            padding-top: 2%;
-        }
-
         .abt-1 {
             width: 70%;
             display: flex;
             flex-direction: column;
         }
 
-        .p1 p {
+        .p p {
             padding: 0%;
             margin: 0%;
-        }
-
-        .p3 {
             line-height: 25px;
         }
 
-        .p5 {
+        .p3,.p5  {
             line-height: 25px;
         }
 
@@ -154,45 +147,36 @@
             object-fit: cover;
             width: 100%;
             border-radius: 15px;
+            margin-left: 10%;
         }
 
         .abt-2 img {
-            width: 50%;
+            width: 70%;
             border-radius: 15px;
             margin-left: 25%;
+            object-fit: cover;
             animation: zoomIn 2s ease-in alternate;
         }
 
-        .abt-2 img:hover {
-            transform: scale(1.01);
-        }
-
         @keyframes zoomIn {
-            from {
-                transform: scale(0.1);
-                opacity: 0;
-                transform: rotate(180deg);
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-                transform: rotate(360deg);
-            }
-
             0% {}
 
             100% {}
         }
 
+        .abt-2 img:hover,
+        .p4:hover {
+            transform: scale(1.02);
+        }
 
         /* ================Footer============== */
         footer {
             text-align: center;
-            background-color: rgba(255, 196, 1, 0.082);
             padding-top: 1%;
             margin-top: 5vh;
             padding-bottom: 1%;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0px 0px 5px black;
         }
 
         .social-icons a {
@@ -221,11 +205,16 @@
             .head {
                 flex-direction: column;
             }
-
+            .p4 img{
+                margin-left: 0%;
+            }
             .krish {
                 width: 210px;
             }
 
+            .navigations {
+                margin-left: 15%;
+            }
 
 
             .abt-1 {
@@ -294,8 +283,12 @@
         @media (max-width:320px) {
             .navigations {
                 column-gap: 3%;
+                margin-left: 6%;
             }
 
+            .Profile p {
+                font-size: 18px;
+            }
         }
 
         /*----------------- Animations---------------- */
@@ -305,41 +298,6 @@
             padding: 1%;
             background-color: rgba(255, 255, 255, 0);
             box-shadow: 0px 0px 5px black;
-            animation: slideDown 0.5s ease-in-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        span.emoji {
-            display: inline-block;
-            animation: bouncey 2s infinite;
-        }
-
-        @keyframes bouncey {
-
-            0%,
-            50%,
-            100% {
-                transform: translateY(0);
-            }
-
-            40% {
-                transform: translateY(-8px);
-            }
-
-            60% {
-                transform: translateY(-4px);
-            }
         }
 
         ul li {
@@ -348,17 +306,17 @@
 
         ul li:hover {
             color: #000000;
-            transform: translateX(5px);
+            transform: translateX(3px);
         }
 
         .about {
-            animation: fadeUp 0.5s ease-in-out;
+            animation: fadeUp 1s ease-in-out;
         }
 
         @keyframes fadeUp {
             from {
                 opacity: 0;
-                transform: translateY(100px);
+                transform: translateY(-200px);
             }
 
             to {
@@ -400,15 +358,11 @@
                 <img src="Assets/my.png" alt="Me">
             </div>
             <div class="p">
-                <div class="p1">
                     <p>Hi, I'm <strong>Krishnakumar</strong> — a passionate Full Stack Developer who enjoys crafting
                         modern, efficient, and user-focused web applications. I thrive on turning ideas into scalable
-                        digital solutions through clean and maintainable code.</p>
-
-                    <p>Beyond coding, I’m curious by nature — exploring design, automation, and emerging technologies. I
+                        digital solutions through clean and maintainable code.Beyond coding, I’m curious by nature — exploring design, automation, and emerging technologies. I
                         love blending creativity and logic to build experiences that make an impact.</p>
 
-                </div>
             </div>
         </div>
         <div class="about2">
@@ -449,13 +403,13 @@
 
         </div>
 
-        
+
     </div>
     <!-- ==========================Footer========================= -->
     <footer>
         <div class="social-icons">
             <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/krish_ram_twinz/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i
                     class="fab fa-facebook"></i></a>
             <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i

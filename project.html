@@ -13,10 +13,11 @@
         }
 
         body {
+            background-image: url(Assets/downlod.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             margin: 0%;
             padding: 0%;
-            background: linear-gradient(135deg, #f9fafc, #e6e9ef);
-            color: #1a1a1a;
         }
 
         /* ===========Header=========== */
@@ -66,13 +67,8 @@
             transform: scale(1.05);
         }
 
-        .nav a {
-            font-size: x-large;
-        }
-
         .nav a:hover {
             color: #000;
-            /* text-shadow: 2px 2px gold; */
         }
 
         .nav a {
@@ -80,6 +76,7 @@
             color: rgb(0, 0, 0);
             position: relative;
             top: 20%;
+            font-size: large;
         }
 
         a {
@@ -102,7 +99,7 @@
 
         .project1 {
             max-width: 39%;
-            background-color: azure;
+            background-color: #c5c3c379;
             display: flex;
             flex-direction: column;
             padding: 2%;
@@ -123,7 +120,7 @@
         }
 
         .project1:hover {
-            background-color: rgb(255, 255, 255);
+            background-color: #F2F2F2;
         }
 
         .p1 img {
@@ -183,7 +180,7 @@
         /* ================Footer============== */
         footer {
             text-align: center;
-            background-color: rgba(255, 196, 1, 0.082);
+            background-color:rgba(255, 255, 255, 0) ;
             padding-top: 1%;
             margin-top: 5vh;
             padding-bottom: 1%;
@@ -207,6 +204,14 @@
                 top: -1%;
             }
 
+            .b {
+                height: 10vh;
+            }
+
+            .btn {
+                height: 15vh;
+            }
+
             .navigations {
                 margin-right: 19%;
             }
@@ -215,6 +220,10 @@
         @media (max-width:768px) {
             .head {
                 flex-direction: column;
+            }
+
+            .navigations {
+                margin-left: 15%;
             }
 
             .p4 {
@@ -300,10 +309,11 @@
         @media (max-width:320px) {
             .navigations {
                 column-gap: 3%;
+                margin-left: 6%;
             }
 
             .b {
-                height: 5vh;
+                height: 10vh;
             }
 
             .btn {
@@ -317,40 +327,23 @@
         }
 
         /* Animations */
-        .head {
-            display: flex;
-            justify-content: space-between;
-            padding: 1%;
-            background-color: rgba(255, 255, 255, 0);
-            box-shadow: 0px 0px 5px black;
-            animation: slideDown 0.5s ease-in-out;
-        }
+        
+        
 
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
 
         .project {
-            animation: fadeUp 0.5s ease-in-out;
+            animation: fadeUp 1s ease-in-out;
         }
 
         @keyframes fadeUp {
             from {
                 opacity: 0;
-                transform: translateY(100px);
+                transform: translateX(-200px);
             }
 
             to {
                 opacity: 1;
-                transform: translateY(0);
+                transform: translateX(0);
             }
         }
     </style>
@@ -383,8 +376,7 @@
 
         <!-- ++++Card-1++++ -->
         <div class="project1">
-            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Pothys/"><img src="Assets/pothys.jpg"
-                        alt="pothysmart"></a>
+            <div class="p1"><a href="Assets/pothys.jpg"><img src="Assets/pothys.jpg" alt="pothysmart"></a>
             </div>
             <div class="p2">
                 <h3>Pothys Mart Website</h3>
@@ -401,8 +393,7 @@
         </div>
         <!-- +++Card-2+++ -->
         <div class="project1">
-            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Sunny_Cafe/" target="_blank"><img
-                        src="Assets/sunny.png" alt=""></a></div>
+            <div class="p1"><a href="Assets/sunny.png"><img src="Assets/sunny.png" alt=""></a></div>
             <div class="p2">
                 <h3>Sunny Cafe</h3>
             </div>
@@ -418,8 +409,7 @@
         </div>
         <!-- ++++Card-3+++++ -->
         <div class="project1">
-            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Assessment_2/" target="_blank"><img
-                        src="Assets/finpay.png" alt=""></a></div>
+            <div class="p1"><a href="Assets/finpay.png"><img src="Assets/finpay.png" alt=""></a></div>
             <div class="p2">
                 <h3>Capstone Project</h3>
             </div>
@@ -435,8 +425,7 @@
         </div>
         <!-- +++++Card-4++++= -->
         <div class="project1">
-            <div class="p1"><a href="https://krishnakumarsdckap-dot.github.io/Basic_HTML_Website/" target="_blank"><img
-                        src="Assets/basic.jpg" alt=""></a></div>
+            <div class="p1"><a href="Assets/basic.jpg"><img src="Assets/basic.jpg" alt=""></a></div>
             <div class="p2">
                 <h3>Basic HTML Website</h3>
             </div>
@@ -454,7 +443,7 @@
 
     </div>
     <a href="achievements.html"><input type="submit" class="btn" value="My Achievements"></a>
-    <!-- <button ><a href="achievements.html"></a></button> -->
+
     <!-- ==========================Footer========================= -->
     <footer>
         <div class="social-icons">
