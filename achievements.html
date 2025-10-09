@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievements</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
             font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -57,6 +58,7 @@
             justify-content: space-evenly;
             margin-right: 15%;
             margin-top: 1%;
+            display: none;
         }
 
         .nav {
@@ -160,13 +162,24 @@
             cursor: pointer;
         }
 
+        .cert {
+            margin-top: 5%;
+        }
+
+        .cert a {
+            color: gray;
+        }
+
+        .cert a:hover {
+            color: rgb(0, 0, 0);
+        }
+
         /* ================Footer============== */
         footer {
             text-align: center;
             background-color: rgba(255, 255, 255, 0);
             box-shadow: 0px 0px 5px black;
             padding-top: 1%;
-            margin-top: 5vh;
             padding-bottom: 1%;
         }
 
@@ -232,11 +245,13 @@
                 flex-direction: column;
                 flex-wrap: wrap;
                 max-width: 90%;
+                padding-bottom: 10%;
+                padding-top: 10%;
             }
 
             .project1 {
                 width: 100%;
-                padding-bottom: 5%;
+                padding: 5%;
             }
 
 
@@ -259,7 +274,7 @@
 
             h3 {
                 font-size: 18px;
-                margin-left: 10%;
+                /* margin-left: 10%; */
             }
 
             .pro img {
@@ -269,6 +284,7 @@
 
             .navigations {
                 column-gap: 6%;
+                margin-left: 12%;
             }
 
             .b {
@@ -300,7 +316,7 @@
         }
 
         /* Animations */
- 
+
         .achievements {
             animation: fadeUp 1s ease-in-out;
         }
@@ -316,13 +332,36 @@
                 transform: translateX(0);
             }
         }
+
+        .back {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1%;
+
+        }
+
+        .back input {
+            display: none;
+        }
+
+        .back i {
+            background-color: #000;
+            color: white;
+            font-size: 50px;
+            border-radius: 5px;
+        }
+
+        .back i:hover {
+            background-color: gray;
+            color: #000;
+        }
     </style>
 </head>
 
 <body>
     <!-- ================Header & Navigation================= -->
     <header>
-        <div class="head">
+        <div class="head" id="achievement">
             <div class="krish">
                 <a href="index.html" class="Profile">
                     <div class="pro"><img src="Assets/img.jpg" alt="My Profile"></div>
@@ -338,13 +377,17 @@
                 <div class="nav nav4"><a href="achievements.html">Achievements</a></div>
                 <div class="nav nav5"><a href="contact.html">Contact</a></div>
             </div>
+            <div class="cert">
+                <a href="#certificates">CERTIFICATES</a>
+            </div>
         </div>
+
     </header>
     <!-- +++=====-----Achievements-----=====+++ -->
     <h1 style="text-align: center;">ACHIEVEMENTS</h1>
     <div class="achievements">
-        
-         <!-- ++++Card-1++++ -->
+
+        <!-- ++++Card-1++++ -->
         <div class="project1">
             <div class="p1"><a href="Assets/nandhan.jpg"><img src="Assets/nandhan.jpg" alt="I"></a></div>
             <div class="p5">
@@ -360,35 +403,50 @@
                 <a href="Assets/nandhan.jpg"><input type="submit" value="View" class="b"></a>
             </div>
         </div>
-         <!-- ++++Card-2++++ -->
+        <!-- ++++Card-2++++ -->
         <div class="project1">
-            <div class="p1"><img src="" alt="HTML"></div>
+            <div class="p1"><a href="Assets/iam.jpg"><img src="Assets/iam.jpg" alt="iam"></a></div>
             <div class="p5">
                 <h3></h3>
             </div>
             <div class="p2">
-                <h3>First rank in  standard</h3>
+                <h3>Firstplace in tournament</h3>
             </div>
             <div class="p3">
-                <p>I studied in A.V.M.School thiruporur,I get First rank in my Tenth standard</p>
+                <p>First place in Silambam tournament which is on the Jeppiar college</p>
             </div>
             <div class="p4">
-                <a href="Assets/"><input type="submit" value="View" class="b"></a>
+                <a href="Assets/iam.jpg"><input type="submit" value="View" class="b"></a>
+            </div>
+        </div>
+        <!-- ++++Card-3++++ -->
+        <div class="project1">
+            <div class="p1"><a href="Assets/p3.png"><img src="Assets/p3.png" alt="iam"></a></div>
+            <div class="p5">
+                <h3></h3>
+            </div>
+            <div class="p2">
+                <h3>Firstplace in tournament</h3>
+            </div>
+            <div class="p3">
+                <p>First place in Silambam tournament it was a government meet in my 11th standard</p>
+            </div>
+            <div class="p4">
+                <a href="Assets/p3.png"><input type="submit" value="View" class="b"></a>
             </div>
         </div>
 
     </div>
     <!-- ++++++--Certificates--++++= -->
 
-        <h1 style="text-align: center;">CERTIFICATES</h1>
+    <h1 style="text-align: center;">CERTIFICATES</h1>
 
-    <div class="achievements">
+    <div class="achievements" id="certificates">
         <!-- ++++Card-1++++ -->
         <div class="project1">
-            <div class="p1"><a href="Assets/HTML Sololearn.jpg"><img src="Assets/HTML Sololearn.jpg" alt="HTML"></a></div>
-            <div class="p5">
-                <h3>Aug 2025</h3>
+            <div class="p1"><a href="Assets/HTML Sololearn.jpg"><img src="Assets/HTML Sololearn.jpg" alt="HTML"></a>
             </div>
+
             <div class="p2">
                 <h3>HTML in Sololearn</h3>
             </div>
@@ -402,9 +460,7 @@
         <!-- ++++Card-2++++ -->
         <div class="project1">
             <div class="p1"><a href="Assets/Css Sololearn.jpg"><img src="Assets/Css Sololearn.jpg" alt="CSS"></a></div>
-            <div class="p5">
-                <h3>Sep 2025</h3>
-            </div>
+
             <div class="p2">
                 <h3>CSS in Sololearn</h3>
             </div>
@@ -418,6 +474,9 @@
 
     </div>
 
+    <div class="back">
+        <a href="index.html"><input type="submit" value=""><i class="fa fa-home"></i></a>
+    </div>
     <!-- ==========================Footer========================= -->
     <footer>
         <div class="social-icons">

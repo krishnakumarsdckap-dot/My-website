@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
             font-family: 'Montserrat', sans-serif;
@@ -180,9 +180,8 @@
         /* ================Footer============== */
         footer {
             text-align: center;
-            background-color:rgba(255, 255, 255, 0) ;
+            background-color: rgba(255, 255, 255, 0);
             padding-top: 1%;
-            margin-top: 5vh;
             padding-bottom: 1%;
         }
 
@@ -205,11 +204,7 @@
             }
 
             .b {
-                height: 10vh;
-            }
-
-            .btn {
-                height: 15vh;
+                height: 6vh;
             }
 
             .navigations {
@@ -236,6 +231,7 @@
             .btn {
                 width: 25%;
                 left: 38%;
+                height: 8vh;
             }
 
             .project {
@@ -253,6 +249,7 @@
 
             .b {
                 width: 100%;
+                height: 6vh;
             }
         }
 
@@ -263,10 +260,13 @@
                 flex-direction: column;
                 flex-wrap: wrap;
                 max-width: 90%;
+                padding-top: 10%;
+                padding-bottom: 10%;
             }
 
             .project1 {
                 width: 100%;
+                padding: 5%
             }
 
             .btn {
@@ -298,6 +298,7 @@
 
             .navigations {
                 column-gap: 6%;
+                margin-left: 12%;
             }
 
             .nav1 {
@@ -305,15 +306,10 @@
             }
         }
 
-
         @media (max-width:320px) {
             .navigations {
                 column-gap: 3%;
                 margin-left: 6%;
-            }
-
-            .b {
-                height: 10vh;
             }
 
             .btn {
@@ -327,8 +323,8 @@
         }
 
         /* Animations */
-        
-        
+
+
 
 
         .project {
@@ -345,6 +341,33 @@
                 opacity: 1;
                 transform: translateX(0);
             }
+        }
+
+        .back {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1%;
+
+        }
+
+        .back input {
+            display: none;
+        }
+
+        .back i {
+            background-color: #000;
+            color: white;
+            font-size: 50px;
+            border-radius: 5px;
+        }
+
+        .back i:hover {
+            background-color: gray;
+            color: #000;
+        }
+
+        .navigations {
+            display: none;
         }
     </style>
 </head>
@@ -443,7 +466,9 @@
 
     </div>
     <a href="achievements.html"><input type="submit" class="btn" value="My Achievements"></a>
-
+    <div class="back">
+        <a href="index.html"><input type="submit" value=""><i class="fa fa-home"></i></a>
+    </div>
     <!-- ==========================Footer========================= -->
     <footer>
         <div class="social-icons">

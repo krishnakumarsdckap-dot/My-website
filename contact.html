@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
             font-family: 'Montserrat', sans-serif;
@@ -19,7 +19,7 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
+        
         /* ===========Header=========== */
         .head {
             display: flex;
@@ -53,7 +53,7 @@
         }
 
         .navigations {
-            display: flex;
+            display: none;
             justify-content: space-evenly;
             margin-right: 15%;
             margin-top: 1%;
@@ -159,7 +159,7 @@
         .details {
             max-width: 100%;
             display: flex;
-            margin-left: 42%;
+            margin-left: 40%;
             flex-direction: column;
         }
 
@@ -178,7 +178,6 @@
         footer {
             text-align: center;
             padding-top: 1%;
-            margin-top: 5vh;
             padding-bottom: 1%;
             background-color: rgba(255, 255, 255, 0);
             box-shadow: 0px 0px 5px black;
@@ -223,11 +222,19 @@
             .details {
                 margin-left: 32%;
             }
+
+            .down-button {
+                width: 45%;
+            }
         }
 
         @media (max-width:425px) {
             .head {
                 flex-direction: column;
+            }
+
+            .down-button {
+                width: 60%;
             }
 
             .pro p {
@@ -278,7 +285,7 @@
         @media (max-width:320px) {
             .navigations {
                 column-gap: 3%;
-                margin-left: 6%;
+                margin-left: 12%;
             }
 
             .Profile p {
@@ -295,7 +302,7 @@
 
         }
 
-        
+
         input:focus,
         textarea:focus {
             outline: none;
@@ -336,6 +343,29 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+        .back {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1%;
+
+        }
+
+        .back input {
+            display: none;
+        }
+
+        .back i {
+            background-color: #000;
+            color: white;
+            font-size: 50px;
+            border-radius: 5px;
+        }
+
+        .back i:hover {
+            background-color: gray;
+            color: #000;
         }
     </style>
 </head>
@@ -395,10 +425,9 @@
                     class="fas fa-download" style="margin-left: 2%;"></i></a>
         </div>
     </div>
-    <script>
-
-
-    </script>
+    <div class="back">
+        <a href="index.html"><input type="submit" value=""><i class="fa fa-home"></i></a>
+    </div>
     <!-- ==========================Footer========================= -->
     <footer>
         <div class="social-icons">

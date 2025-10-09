@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
             font-family: 'Montserrat', sans-serif;
@@ -23,7 +23,7 @@
 
 
         /* ===========Header=========== */
-       .head {
+        .head {
             display: flex;
             justify-content: space-between;
             padding-left: 1%;
@@ -116,7 +116,7 @@
             justify-content: space-between;
         }
 
-        .hero {
+        .hero2 {
             display: flex;
             padding: 5%;
             margin: 0%;
@@ -135,7 +135,8 @@
             line-height: 25px;
         }
 
-        .p3,.p5  {
+        .p3,
+        .p5 {
             line-height: 25px;
         }
 
@@ -163,11 +164,14 @@
             transform: scale(1.03);
         }
 
+        .navigations {
+            display: none;
+        }
+
         /* ================Footer============== */
         footer {
             text-align: center;
             padding-top: 1%;
-            margin-top: 5vh;
             padding-bottom: 1%;
             background-color: rgba(255, 255, 255, 0);
             box-shadow: 0px 0px 5px black;
@@ -199,9 +203,22 @@
             .head {
                 flex-direction: column;
             }
-            .p4 img{
-                margin-left: 0%;
+
+            .hero2 {
+                flex-direction: column;
+                justify-content: center;
             }
+
+            .abt-2 img {
+                margin-left: 38%;
+                width: 20%;
+            }
+
+            .p4 img {
+                margin-left: 0%;
+                height: 60vh;
+            }
+
             .krish {
                 width: 210px;
             }
@@ -219,7 +236,14 @@
                 align-items: center;
                 flex-direction: column-reverse;
             }
-
+            ul {
+                margin-right: -20%;
+                margin-left: -20%;
+                /* background-color: aliceblue; */
+            }
+            .p3 h2,.p5 h2{
+                margin-left: -20%;
+            }
         }
 
         @media (max-width:425px) {
@@ -233,7 +257,7 @@
             }
 
             .pro p {
-                font-size: 16px;
+                font-size: 14px;
                 margin-left: 1%;
             }
 
@@ -242,7 +266,7 @@
             }
 
             .nav a {
-                font-size: 16px;
+                font-size: 14px;
             }
 
             .hero h1 {
@@ -250,7 +274,7 @@
             }
 
             h3 {
-                font-size: 18px;
+                font-size: 14px;
                 margin-left: 10%;
             }
 
@@ -261,6 +285,8 @@
 
             .navigations {
                 column-gap: 6%;
+                margin-left: 12%;
+                margin-top: 4%;
             }
 
             .about2 {
@@ -272,12 +298,15 @@
             .nav1 {
                 display: none;
             }
+
+            
         }
 
         @media (max-width:320px) {
             .navigations {
                 column-gap: 3%;
                 margin-left: 6%;
+
             }
 
             .Profile p {
@@ -311,6 +340,29 @@
                 transform: translateY(0);
             }
         }
+
+        .back {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1%;
+
+        }
+
+        .back input {
+            display: none;
+        }
+
+        .back i {
+            background-color: #000;
+            color: white;
+            font-size: 50px;
+            border-radius: 5px;
+        }
+
+        .back i:hover {
+            background-color: gray;
+            color: #000;
+        }
     </style>
 </head>
 
@@ -340,16 +392,16 @@
         <div class="about1">
             <h1>About Me</h1>
         </div>
-        <div class="hero">
+        <div class="hero2">
             <div class="abt-2">
                 <img src="Assets/my.png" alt="Me">
             </div>
             <div class="p">
-                    <p>Hi, I'm <strong>Krishnakumar</strong> — a passionate Full Stack Developer who enjoys crafting
-                        modern, efficient, and user-focused web applications. I thrive on turning ideas into scalable
-                        digital solutions through clean and maintainable code.Beyond coding, I’m curious by nature — exploring design, automation, and emerging technologies. I
-                        love blending creativity and logic to build experiences that make an impact.</p>
-
+                <p>Hi, I'm <strong>Krishnakumar</strong> — a passionate Full Stack Developer who enjoys crafting modern,
+                    efficient, and user-focused web applications. I thrive on turning ideas into scalable digital
+                    solutions through clean and maintainable code.Beyond coding, I’m curious by nature — exploring
+                    design, automation, and emerging technologies. I love blending creativity and logic to build
+                    experiences that make an impact.</p>
             </div>
         </div>
         <div class="about2">
@@ -371,7 +423,8 @@
                 <div class="p5">
                     <h2>My Goals</h2>
                     <ul>
-                        <li><i class="fa-solid fa-rocket"></i> Advance as a proficient full stack engineer and waiting for my best position</li>
+                        <li><i class="fa-solid fa-rocket"></i> Advance as a proficient full stack engineer and waiting
+                            for my best position</li>
                         <li><i class="fa-solid fa-people-group"></i> Contribute to impactful open-source and community
                             projects</li>
                         <li><i class="fa-solid fa-handshake"></i> Collaborate with creative teams to build innovative
@@ -390,7 +443,9 @@
 
         </div>
 
-
+    </div>
+    <div class="back">
+        <a href="index.html"><input type="submit" value=""><i class="fa fa-home"></i></a>
     </div>
     <!-- ==========================Footer========================= -->
     <footer>
