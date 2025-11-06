@@ -2,497 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achievements</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        * {
-            font-family: 'Montserrat', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0%;
-            padding: 0%;
-            background-image: url(Assets/downlod.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /* ===========Header=========== */
-        .head {
-            display: flex;
-            justify-content: space-between;
-            padding: 1%;
-            background-color: rgba(255, 255, 255, 0);
-            box-shadow: 0px 0px 5px black;
-        }
-
-        .Profile {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: black;
-        }
-
-        .Profile:hover {
-            transform: scale(1.05);
-        }
-
-        .Profile .pro img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-
-        }
-
-        .Profile .p {
-            margin-left: 10px;
-            font-size: x-large;
-        }
-
-        .navigations {
-            display: flex;
-            justify-content: space-evenly;
-            margin-right: 15%;
-            margin-top: 1%;
-            display: none;
-        }
-
-        .nav {
-            margin-right: 10%;
-        }
-
-        .nav:hover {
-            transform: scale(1.05);
-        }
-
-        .nav a {
-            font-size: large;
-        }
-
-        .nav a:hover {
-            color: #000;
-            /* text-shadow: 2px 2px gold; */
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            position: relative;
-            top: 20%;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        /* =============Achievements============= */
-        .achievements {
-            max-width: 70%;
-            margin: auto;
-            padding: 3%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            column-gap: 10vh;
-            row-gap: 10vh;
-            border-radius: 10px;
-            box-shadow: 0px 0px 5px;
-        }
-
-
-        .project1 {
-            max-width: 39%;
-            background-color: #c5c3c379;
-            display: flex;
-            flex-direction: column;
-            padding: 2%;
-            border-radius: 10px;
-            box-shadow: 0px 0px 5px;
-        }
-
-        .p1 img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border: 1px solid black;
-            border-radius: 10px;
-        }
-
-        .project1:hover {
-            transform: scale(1.02);
-            transition-duration: 0.8s;
-        }
-
-        .project1:hover img {
-            transform: scale(1.04);
-            transition-duration: 0.8s;
-        }
-
-        .project1:hover {
-            background-color: #F2F2F2;
-        }
-
-        .p4 {
-            margin-top: 2%;
-            display: flex;
-            justify-content: space-evenly;
-            height: 5vh;
-
-        }
-
-        .b {
-            height: 5vh;
-            width: 10vw;
-            background-color: grey;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 2vh;
-
-        }
-
-        .b:hover {
-            transform: scale(1.1);
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            box-shadow: 0px 0px 10px black;
-            cursor: pointer;
-        }
-
-        .cert {
-            margin-top: 5%;
-        }
-
-        .cert a {
-            color: gray;
-        }
-
-        .cert a:hover {
-            color: rgb(0, 0, 0);
-        }
-
-        /* ================Footer============== */
-        footer {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0);
-            box-shadow: 0px 0px 5px black;
-            padding-top: 1%;
-            padding-bottom: 1%;
-        }
-
-        .social-icons a {
-            font-size: 30px;
-            margin: 10px;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .social-icons a:hover {
-            color: #1DA1F2;
-            /* hover color */
-        }
-
-        /* ======++++++Meadia_Query++++++===== */
-        @media (max-width:1024px) {
-            .pro p {
-                top: -1%;
-            }
-
-            .navigations {
-                margin-right: 19%;
-            }
-        }
-
-        @media (max-width:768px) {
-            .navigations {
-                margin-left: 15%;
-            }
-
-            .p4 {
-                flex-direction: column;
-                /* width: 100%; */
-                margin: auto;
-
-            }
-
-            .krish {
-                width: 210px;
-            }
-            
-
-            .head {
-                flex-direction: column;
-            }
-
-            .project {
-                flex-direction: column;
-            }
-
-            .project1 {
-                max-width: 68%;
-                margin: auto;
-                padding-bottom: 5%;
-            }
-
-        }
-
-        @media (max-width:425px) {
-
-            .project,
-            .achievements {
-                flex-direction: column;
-                flex-wrap: wrap;
-                max-width: 90%;
-                padding-bottom: 10%;
-                padding-top: 10%;
-            }
-
-            .project1 {
-                width: 100%;
-                padding: 5%;
-            }
-
-
-            .head {
-                flex-direction: column;
-            }
-
-            .pro p {
-                font-size: 16px;
-                margin-left: 1%;
-            }
-
-            .nav {
-                margin-right: 0%;
-            }
-
-            .nav a {
-                font-size: 16px;
-            }
-
-            h3 {
-                font-size: 18px;
-                /* margin-left: 10%; */
-            }
-
-            .pro img {
-                height: 6vh;
-                width: 6vw;
-            }
-
-            .navigations {
-                column-gap: 6%;
-                margin-left: 12%;
-            }
-
-            .b {
-                width: 15vw;
-
-            }
-
-            .nav1 {
-                display: none;
-            }
-        }
-
-
-        @media (max-width:320px) {
-            .project1 {
-                padding-bottom: 8%;
-            }
-
-            .Profile p {
-                font-size: 18px;
-            }
-
-            .navigations {
-                column-gap: 3%;
-                margin-left: 6%;
-            }
-
-
-        }
-
-        /* Animations */
-
-        .achievements {
-            animation: fadeUp 1s ease-in-out;
-        }
-
-        @keyframes fadeUp {
-            0% {
-                opacity: 0;
-                transform: translateX(200px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .back {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 1%;
-
-        }
-
-        .back input {
-            display: none;
-        }
-
-        .back i {
-            background-color: #000;
-            color: white;
-            font-size: 50px;
-            border-radius: 5px;
-        }
-
-        .back i:hover {
-            background-color: gray;
-            color: #000;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements | Krishnakumar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- ================Header & Navigation================= -->
-    <header>
-        <div class="head" id="achievement">
-            <div class="krish">
-                <a href="index.html" class="Profile">
-                    <div class="pro"><img src="Assets/img.jpg" alt="My Profile"></div>
-                    <div class="p">
-                        <p>Krishnakumar</p>
-                    </div>
-                </a>
-            </div>
-            <div class="navigations">
-                <div class="nav nav1"><a href="index.html">Home</a></div>
-                <div class="nav nav2"><a href="about.html">About</a></div>
-                <div class="nav nav3"><a href="project.html">Project</a></div>
-                <div class="nav nav4"><a href="achievements.html">Achievements</a></div>
-                <div class="nav nav5"><a href="contact.html">Contact</a></div>
-            </div>
-            <div class="cert">
-                <a href="#certificates">CERTIFICATES</a>
-            </div>
-        </div>
 
-    </header>
-    <!-- +++=====-----Achievements-----=====+++ -->
-    <h1 style="text-align: center;">ACHIEVEMENTS</h1>
-    <div class="achievements">
+  <!-- Background video -->
+  <video autoplay muted loop playsinline loop>
+    <source src="Assets/m.mp4" type="video/mp4">
+    <!-- fallback -->
+    <!-- Your browser does not support the video tag. -->
+  </video>
+  <div class="overlay"></div>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <a href="project.html"><i class="fas fa-project-diagram"></i></a>
+    <a href="achievements.html"><i class="fas fa-trophy"></i></a>
+    <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+  </div>
 
-        <!-- ++++Card-1++++ -->
-        <div class="project1">
-            <div class="p1"><a href="Assets/nandhan.jpg"><img src="Assets/nandhan.jpg" alt="I"></a></div>
-            <div class="p5">
-                <h3></h3>
-            </div>
-            <div class="p2">
-                <h3>First rank in I standard</h3>
-            </div>
-            <div class="p3">
-                <p>I studied in B.K.M.School thiruporur,I get First rank in my first standard</p>
-            </div>
-            <div class="p4">
-                <a href="Assets/nandhan.jpg"><input type="submit" value="View" class="b"></a>
-            </div>
-        </div>
-        <!-- ++++Card-2++++ -->
-        <div class="project1">
-            <div class="p1"><a href="Assets/iam.jpg"><img src="Assets/iam.jpg" alt="iam"></a></div>
-            <div class="p5">
-                <h3></h3>
-            </div>
-            <div class="p2">
-                <h3>Firstplace in tournament</h3>
-            </div>
-            <div class="p3">
-                <p>First place in Silambam tournament which is on the Jeppiar college</p>
-            </div>
-            <div class="p4">
-                <a href="Assets/iam.jpg"><input type="submit" value="View" class="b"></a>
-            </div>
-        </div>
-        <!-- ++++Card-3++++ -->
-        <div class="project1">
-            <div class="p1"><a href="Assets/p3.png"><img src="Assets/p3.png" alt="iam"></a></div>
-            <div class="p5">
-                <h3></h3>
-            </div>
-            <div class="p2">
-                <h3>Firstplace in tournament</h3>
-            </div>
-            <div class="p3">
-                <p>First place in Silambam tournament it was a government meet in my 11th standard</p>
-            </div>
-            <div class="p4">
-                <a href="Assets/p3.png"><input type="submit" value="View" class="b"></a>
-            </div>
-        </div>
+  <!-- Main Content -->
+  <div class="main">
+    <h1>My Achievements</h1>
+    <p class="subtitle">Some highlights from my journey 🎖️</p>
 
-    </div>
-    <!-- ++++++--Certificates--++++= -->
+    <div class="achievements-grid">
+      <!-- Achievement 1 -->
+      <div class="card">
+        <img src="Assets/nandhan.jpg" alt="Certificate 1">
+        <h3>1st Rank in 1 standard</h3>
+        <p>I have Scored first rank in first standard</p>
+        <a href="Assets/nandhan.jpg" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> View</a>
+      </div>
 
-    <h1 style="text-align: center;">CERTIFICATES</h1>
+      <!-- Achievement 2 -->
+      <div class="card">
+        <img src="Assets/p3.png" alt="Certificate 2">
+        <h3>Silambam Competition</h3>
+        <p>When i was studying in 10th standard i won the district meet in Silambam</p>
+        <a href="Assets/p3.png" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> View</a>
+      </div>
 
-    <div class="achievements" id="certificates">
-        <!-- ++++Card-1++++ -->
-        <div class="project1">
-            <div class="p1"><a href="Assets/HTML Sololearn.jpg"><img src="Assets/HTML Sololearn.jpg" alt="HTML"></a>
-            </div>
-
-            <div class="p2">
-                <h3>HTML in Sololearn</h3>
-            </div>
-            <div class="p3">
-                <p>I have Completed the Introduction to HTML in Sololearn Website</p>
-            </div>
-            <div class="p4">
-                <a href="Assets/HTML.pdf"><input type="submit" value="View" class="b"></a>
-            </div>
-        </div>
-        <!-- ++++Card-2++++ -->
-        <div class="project1">
-            <div class="p1"><a href="Assets/Css Sololearn.jpg"><img src="Assets/Css Sololearn.jpg" alt="CSS"></a></div>
-
-            <div class="p2">
-                <h3>CSS in Sololearn</h3>
-            </div>
-            <div class="p3">
-                <p>I have Completed the Introduction to CSS in Sololearn Website</p>
-            </div>
-            <div class="p4">
-                <a href="Assets/CSS.pdf"><input type="submit" value="View" class="b"></a>
-            </div>
-        </div>
-
+      <!-- Achievement 3 -->
+      <div class="card">
+        <img src="Assets/iam.jpg" alt="Certificate 3">
+        <h3>Silambam Competition</h3>
+        <p>I won third place. this competition is conducted in S.T.Joseph College</p>
+        <a href="Assets/iam.jpg" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> View</a>
+      </div>
     </div>
 
-    <div class="back">
-        <a href="index.html"><input type="submit" value=""><i class="fa fa-home"></i></a>
-    </div>
-    <!-- ==========================Footer========================= -->
-    <footer>
-        <div class="social-icons">
-            <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/krish_ram_twinz/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i
-                    class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-        </div>
-        <div style="margin-top: 2%;">
-            &COPY; Copy Writted @ 2025 By K₹!$H
-        </div>
+    <!-- Certificates -->
 
-    </footer>
+    <h1 class="Certificate">My Certificates</h1>
+
+    <div class="achievements-grid">
+      <!-- Certificate 1 -->
+      <div class="card">
+        <a href="Assets/HTML Sololearn.jpg"><img src="Assets/HTML Sololearn.jpg" alt="Certificate 1"></a>
+        <h3>HTML Sololearn</h3>
+        <p>I have completed a certification course in HTML from SoloLearn.This certification helped me strengthen my
+          foundation in web development.</p>
+        <a href="Assets/HTML.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> View</a>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="card">
+        <a href="Assets/Css Sololearn.jpg"><img src="Assets/Css Sololearn.jpg" alt="Certificate 2"></a>
+        <h3>CSS Sololearn</h3>
+        <p>I have completed a certification course in CSS from SoloLearn.This certification helped me strengthen my
+          foundation in web development.</p>
+        <a href="Assets/CSS.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> View</a>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="card">
+        <a href="Assets/JS.jpg"><img src="Assets/JS.jpg" alt="Certificate 2"></a>
+        <h3>JS Sololearn</h3>
+        <p>I have completed a certification course in JS from SoloLearn.This certification helped me strengthen my
+          foundation in web development.</p>
+        <a href="Assets/JS.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> View</a>
+      </div>
+
+    </div>
+  </div>
+
 </body>
 
 </html>

@@ -2,452 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        * {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        body {
-            margin: 0%;
-            padding: 0%;
-            background-image: url(Assets/downlod.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        /* ===========Header=========== */
-        .head {
-            display: flex;
-            justify-content: space-between;
-            padding: 1%;
-            background-color: rgba(255, 255, 255, 0);
-            box-shadow: 0px 0px 5px black;
-        }
-
-        .Profile {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: black;
-        }
-
-        .Profile:hover {
-            transform: scale(1.05);
-        }
-
-        .Profile .pro img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-
-        }
-
-        .Profile .p {
-            margin-left: 10px;
-            font-size: x-large;
-        }
-
-        .navigations {
-            display: none;
-            justify-content: space-evenly;
-            margin-right: 15%;
-            margin-top: 1%;
-        }
-
-        .nav {
-            margin-right: 10%;
-        }
-
-        .nav:hover {
-            transform: scale(1.05);
-        }
-
-        .nav a {
-            font-size: large;
-        }
-
-        .nav a:hover {
-            color: #000;
-            /* text-shadow: 2px 2px gold; */
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            position: relative;
-            top: 20%;
-        }
-
-        a {
-            text-decoration: none;
-
-        }
-
-        .details span a {
-            color: gray;
-
-        }
-
-        /* +++++++++++=Contact============= */
-        .contact {
-            max-width: 80%;
-            margin: auto;
-            margin-top: 10vh;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px;
-        }
-
-        h1 {
-            text-align: center;
-            padding-top: 10vh;
-        }
-
-        .form {
-            width: 60%;
-            margin: auto;
-            line-height: 40px;
-        }
-
-        .label {
-            font-size: 20px;
-        }
-
-        input {
-            height: 30px;
-            width: 98%;
-            border-radius: 5px;
-            border: 1px solid rgb(0, 0, 0);
-        }
-
-        textarea {
-            width: 98%;
-            height: 10vh;
-            border-radius: 5px;
-        }
-
-        .btn1 {
-            background-color: gray;
-            color: rgb(255, 255, 255);
-            height: 35px;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 5vh;
-            text-align: center;
-            padding: 0%;
-            width: 99%;
-        }
-
-        .btn1:hover,
-        .down-button:hover {
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            box-shadow: 0px 0px 10px black;
-            cursor: pointer;
-        }
-
-        .btn1:focus,
-        .down-button:focus {
-            background-color: rgb(213, 255, 200);
-            color: rgb(0, 0, 0);
-        }
-
-        .details {
-            max-width: 100%;
-            display: flex;
-            margin-left: 40%;
-            flex-direction: column;
-        }
-
-        .down-button {
-            width: 30%;
-            height: 30px;
-            background-color: gray;
-            color: #ffffff;
-            border-radius: 5px;
-            padding-left: 5%;
-            padding-top: 2%;
-            margin-bottom: 5%;
-        }
-
-        /* ================Footer============== */
-        footer {
-            text-align: center;
-            padding-top: 1%;
-            padding-bottom: 1%;
-            background-color: rgba(255, 255, 255, 0);
-            box-shadow: 0px 0px 5px black;
-        }
-
-        .social-icons a {
-            font-size: 30px;
-            margin: 10px;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .social-icons a:hover {
-            color: #1DA1F2;
-            /* hover color */
-        }
-
-        /* ======++++++Meadia_Query++++++===== */
-        @media (max-width:1024px) {
-            .pro p {
-                top: -1%;
-            }
-
-            .navigations {
-                margin-right: 19%;
-            }
-        }
-
-        @media (max-width:768px) {
-            .head {
-                flex-direction: column;
-            }
-
-            .form {
-                width: 80%;
-            }
-
-            .navigations {
-                margin-left: 15%;
-            }
-
-            .krish {
-                width: 210px;
-            }
-
-            .details {
-                margin-left: 32%;
-            }
-
-            .down-button {
-                width: 45%;
-            }
-        }
-
-        @media (max-width:425px) {
-            .head {
-                flex-direction: column;
-            }
-
-            .down-button {
-                width: 60%;
-            }
-
-            .pro p {
-                font-size: 16px;
-                margin-left: 1%;
-            }
-
-            .nav {
-                margin-right: 0%;
-            }
-
-            .nav a {
-                font-size: 16px;
-            }
-
-            h3 {
-                font-size: 18px;
-                margin-left: 10%;
-            }
-
-            .pro img {
-                height: 6vh;
-                width: 6vw;
-            }
-
-            .details {
-                margin-left: 22%;
-            }
-
-            .navigations {
-                column-gap: 6%;
-            }
-
-            .details {
-                font-size: small;
-            }
-
-            .krish {
-                width: 210px;
-                display: flex;
-            }
-
-            .nav1 {
-                display: none;
-            }
-        }
-
-        @media (max-width:320px) {
-            .navigations {
-                column-gap: 3%;
-                margin-left: 12%;
-            }
-
-            .Profile p {
-                font-size: 18px;
-            }
-
-            .details {
-                margin-left: 11%;
-            }
-
-            .nav1 {
-                display: none;
-            }
-
-        }
-
-
-        input:focus,
-        textarea:focus {
-            outline: none;
-            /* border: none; */
-            transition: 0.3s;
-            box-shadow: 0px 0px 8px;
-        }
-
-        .social-icons a {
-            font-size: 30px;
-            margin: 10px;
-            color: #333;
-            text-decoration: none;
-            transition: transform 0.4s ease, color 0.3s;
-        }
-
-        .social-icons a:hover {
-            transform: rotate(360deg) scale(1.2);
-            color: #1DA1F2;
-        }
-
-        .contact {
-            max-width: 80%;
-            margin: auto;
-            margin-top: 10vh;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px;
-            animation: fadeUp 1s ease-in-out;
-        }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(200px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .back {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 1%;
-
-        }
-
-        .back input {
-            display: none;
-        }
-
-        .back i {
-            background-color: #000;
-            color: white;
-            font-size: 50px;
-            border-radius: 5px;
-        }
-
-        .back i:hover {
-            background-color: gray;
-            color: #000;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Header</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    /* Meadia Queery */
+
+    @media(max-width:1450px){
+      .sidebar {
+        padding-top: 7%;
+      }
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, #00ff88, #00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- ================Header & Navigation================= -->
-    <header>
-        <div class="head">
-            <div class="krish">
-                <a href="index.html" class="Profile">
-                    <div class="pro"><img src="Assets/img.jpg" alt="My Profile"></div>
-                    <div class="p">
-                        <p>Krishnakumar</p>
-                    </div>
-                </a>
-            </div>
-            <div class="navigations">
-                <div class="nav nav1"><a href="index.html">Home</a></div>
-                <div class="nav nav2"><a href="about.html">About</a></div>
-                <div class="nav nav3"><a href="project.html">Project</a></div>
-                <div class="nav nav4"><a href="achievements.html">Achievements</a></div>
-                <div class="nav nav5"><a href="contact.html">Contact</a></div>
-            </div>
-        </div>
-    </header>
-    <!-- +++++=====Contact=====+++++ -->
-    <div class="contact ">
-        <h1>Contact Me</h1>
-        <div class="form">
-            <form>
-                <!-- Name -->
-                <div class="label"><label for="name">Name</label></div>
-                <div class="input"><input type="text" placeholder="Your Full Name" id="name" required></div>
-                <!-- Phone -->
-                <div class="label"><label for="phone">Phone</label></div>
-                <div class="input"><input type="tel" maxlength="10" placeholder="Your Phone Number" id="phone" required>
-                </div>
-                <!-- Email -->
-                <div class="label"><label for="email">Email</label></div>
-                <div class="input"><input type="email" placeholder="Your Email Address" id="email" required></div>
-                <!-- Message -->
-                <div class="label"><label for="message">Message</label></div>
-                <div class="input"><textarea name="textarea" id="message" placeholder="Message" id="message"
-                        required></textarea></div>
-                <!-- button -->
-                <div> <button class="btn1">Send Message</button></div>
-            </form>
 
-        </div>
-        <div class="details">
-            <p>Email:<span><a
-                        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtDkwWqPhpzSxtbzczTpHnbKRXKNZtZpPPjTNdPKgVwNjgrQHdRvlZvsnbpfLHLMDPhVCPQq">krish06kumars@gmail.com</a></span>
-            </p>
-            <p>Connect: <span><a href="https://github.com/krishnakumarsdckap-dot"> GitHub</a></span></p>
-            <p>Phone: <span><a href="tel:+91 88070244066">+91 88070244066</a></span></p>
-            <a href="Assets/Krish resume.pdf" class="down-button" download="Krishnakumar Resume">Download Resume<i
-                    class="fas fa-download" style="margin-left: 2%;"></i></a>
-        </div>
+  <!-- Background video -->
+  <video autoplay muted loop playsinline>
+    <source src="Assets/m.mp4" type="video/mp4">
+    <!-- fallback -->
+    <!-- Your browser does not support the video tag. -->
+  </video>
+  <div class="overlay"></div>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <a href="project.html"><i class="fas fa-project-diagram"></i></a>
+    <a href="achievements.html"><i class="fas fa-trophy"></i></a>
+    <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>Get in Touch</h1>
+    <p>Have a project idea or want to collaborate? Lets connect!</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message..." required></textarea>
+      <button type="submit" class="resume" style="margin-left: 23%;">Send Message</button>
+    </form>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/krishnakumarsdckap-dot" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://www.instagram.com/krish_ram_twinz?igsh=MXR6ZTUwdDZnazVjZw==" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsdBqKtlkhWNPrKdnfnTsKvqgfvghkRXdGSHbHnKZPBLJKHjLnKQRfXqvVJtbjhhtzJpphVL">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
     </div>
-    <div class="back">
-        <a href="index.html"><input type="submit" value=""><i class="fa fa-home"></i></a>
-    </div>
-    <!-- ==========================Footer========================= -->
-    <footer>
-        <div class="social-icons">
-            <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/krish_ram_twinz/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i
-                    class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-        </div>
-        <div style="margin-top: 2%;">
-            &COPY; Copy Writted @ 2025 By K₹!$H
-        </div>
-
-    </footer>
-
+  </div>
 </body>
 
 </html>

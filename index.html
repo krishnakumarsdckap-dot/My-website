@@ -2,860 +2,233 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </link>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Fugaz+One&family=Press+Start+2P&family=Gloria+Hallelujah&family=Monoton&display=swap"
-        rel="stylesheet">
-    </link>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        * {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        body {
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin: 0%;
-            padding: 0%;
-            overflow: scroll;
-            overflow-x: hidden;
-
-        }
-
-        /* ===========Header=========== */
-        .head {
-            display: flex;
-            justify-content: space-between;
-            padding: 1%;
-            background-color: rgba(255, 255, 255, 0);
-            box-shadow: 0px 0px 5px black;
-        }
-
-        .Profile {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: black;
-        }
-
-        .Profile:hover {
-            transform: scale(1.05);
-        }
-
-        .Profile .pro img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-
-        }
-
-        .Profile .p {
-            margin-left: 10px;
-            font-size: x-large;
-        }
-
-        .navigations {
-            display: flex;
-            justify-content: space-evenly;
-            margin-right: 15%;
-            margin-top: 1%;
-        }
-
-        .nav {
-            margin-right: 10%;
-        }
-
-        .nav:hover {
-            transform: scale(1.05);
-        }
-
-        .nav a {
-            font-size: large;
-        }
-
-        .nav a:hover {
-            color: #000;
-            /* text-shadow: 2px 2px gold; */
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            position: relative;
-            top: 20%;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        /* ====================Home Page======================  */
-        .page1 {
-            margin: 0%;
-            padding: 0%;
-            height: 50vh;
-            padding-top: 15vh;
-            width: 100%;
-
-        }
-
-        .hero {
-            border: 2px solid grey;
-            color: rgb(0, 0, 0);
-            max-width: 70%;
-            margin: auto;
-            border-radius: 15px;
-            /* margin-bottom: 10vh; */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0px 0px 50px gray;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        .btn11:hover {
-            transform: scale(1.1);
-            background-color: rgb(255, 255, 255);
-            color: rgb(163, 159, 133);
-            box-shadow: 0px 0px 10px black;
-        }
-
-        .btn11 {
-            margin-top: 10px;
-            height: 30px;
-            width: 135px;
-            border: none;
-            padding: 1%;
-            border-radius: 5px;
-            margin-bottom: 10vh;
-            position: relative;
-            overflow: hidden;
-            border: none;
-            cursor: pointer;
-            background-color: gray;
-            color: rgb(255, 255, 255);
-        }
-
-        .btn11::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -75px;
-            width: 50px;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.6);
-            transform: skewY(-50deg);
-        }
-
-        h3 {
-            font-size: 20px;
-        }
-
-
-        /* +++++++------About Section--------++++++++ */
-        .about {
-            justify-content: center;
-            max-width: 70%;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            padding-top: 5vh;
-            border-radius: 15px;
-            box-shadow: 0px 0px 5px black;
-        }
-
-
-        .about1 {
-            text-align: center;
-        }
-
-        .about2 {
-            display: flex;
-            flex-direction: row;
-            padding-left: 10%;
-            padding-right: 10%;
-            margin-top: 2%;
-            justify-content: space-between;
-        }
-
-        .hero2 {
-            display: flex;
-            padding: 5%;
-            margin: 0%;
-            margin-top: 2%;
-            column-gap: 5%;
-        }
-
-        .abt-1 {
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .p p {
-            padding: 0%;
-            margin: 0%;
-            line-height: 25px;
-        }
-
-        .abt-2 img {
-            width: 100%;
-            border-radius: 15px;
-            margin-left: 25%;
-            object-fit: cover;
-        }
-
-        .abt-2 img:hover {
-            transform: scale(1.03);
-        }
-
-        .a {
-            width: 20%;
-            margin-left: 40%;
-        }
-
-
-        /*=+++++++++++++++ Project++++++++++++++= */
-        .project {
-            max-width: 65%;
-            margin: auto;
-            padding: 3%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            column-gap: 10vh;
-            row-gap: 10vh;
-            border-radius: 10px;
-            box-shadow: 0px 0px 5px;
-        }
-
-        .project1 {
-            max-width: 39%;
-            background-color: #c5c3c379;
-            display: flex;
-            flex-direction: column;
-            padding: 2%;
-            padding: 2%;
-            border-radius: 10px;
-            box-shadow: 0px 0px 5px;
-
-        }
-
-        .project1:hover {
-            transform: scale(1.02);
-            transition-duration: 0.8s;
-        }
-
-        .project1:hover img {
-            transform: scale(1.04);
-            transition-duration: 0.8s;
-        }
-
-        .project1:hover {
-            background-color: #F2F2F2;
-        }
-
-        .p1 img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border: 1px solid black;
-            border-radius: 10px;
-            border: none;
-        }
-
-        .p4 {
-            margin-top: 2%;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .b {
-            height: 5vh;
-            width: 10vw;
-            background-color: grey;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 2vh;
-
-        }
-
-        .b:hover {
-            transform: scale(1.1);
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            box-shadow: 0px 0px 10px black;
-            cursor: pointer;
-        }
-
-        .btn {
-            height: 5vh;
-            width: 12vw;
-            background-color: grey;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 2vh;
-            margin-top: 5vh;
-            position: relative;
-            left: 45%;
-            color: #000;
-            text-align: center;
-            padding-bottom: 5px;
-        }
-
-        .btn:hover {
-            transform: scale(1.1);
-            background-color: rgb(255, 255, 255);
-            color: rgb(163, 159, 133);
-            box-shadow: 0px 0px 10px black;
-            cursor: pointer;
-            color: black;
-        }
-
-        /* +++++++Achievements+++++++++ */
-        .achievements {
-            max-width: 65%;
-            margin: auto;
-            padding: 3%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            column-gap: 10vh;
-            row-gap: 10vh;
-            border-radius: 10px;
-            box-shadow: 0px 0px 5px;
-        }
-
-        /* +++++++++++=Contact============= */
-        .contact {
-            max-width: 70%;
-            margin: auto;
-            margin-top: 10vh;
-            border-radius: 10px;
-            box-shadow: 0px 0px 50px gray;
-        }
-
-        h1 {
-            text-align: center;
-            padding-top: 8vh;
-        }
-
-        .form {
-            width: 60%;
-            margin: auto;
-            line-height: 40px;
-        }
-
-        .label {
-            font-size: 20px;
-        }
-
-        input {
-            height: 30px;
-            width: 98%;
-            border-radius: 5px;
-            border: 1px solid rgb(0, 0, 0);
-        }
-
-        textarea {
-            width: 98%;
-            height: 10vh;
-            border-radius: 5px;
-        }
-
-        .btn1 {
-            background-color: gray;
-            color: rgb(255, 255, 255);
-            height: 35px;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 5vh;
-            text-align: center;
-            padding: 0%;
-            width: 99%;
-        }
-
-        .btn1:hover,
-        .down-button:hover {
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            box-shadow: 0px 0px 10px black;
-            cursor: pointer;
-        }
-
-        .btn1:focus,
-        .down-button:focus {
-            background-color: rgb(213, 255, 200);
-            color: rgb(0, 0, 0);
-        }
-
-        .details {
-            max-width: 100%;
-            display: flex;
-            margin-left: 35%;
-            flex-direction: column;
-        }
-
-        .details b a {
-            color: #48494b;
-        }
-
-        .details b a:hover {
-            color: blue;
-        }
-
-        .down-button {
-            width: 35%;
-            height: 30px;
-            background-color: gray;
-            color: #ffffff;
-            border-radius: 5px;
-            padding-left: 5%;
-            padding-top: 2%;
-        }
-
-        input:focus,
-        textarea:focus {
-            outline: none;
-            /* border: none; */
-            transition: 0.3s;
-            box-shadow: 0px 0px 8px;
-        }
-
-        .social-icons a {
-            font-size: 30px;
-            margin: 10px;
-            color: #333;
-            text-decoration: none;
-            transition: transform 0.4s ease, color 0.3s;
-        }
-
-        .social-icons a:hover {
-            transform: rotate(360deg) scale(1.2);
-            color: #1DA1F2;
-        }
-
-
-        /* ================Footer============== */
-        footer {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0);
-            padding-top: 1%;
-            padding-bottom: 1%;
-            box-shadow: 0px 0px 5px black;
-        }
-
-        .social-icons a {
-            font-size: 30px;
-            margin: 10px;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .social-icons a:hover {
-            color: #1DA1F2;
-            /* hover color */
-        }
-
-        .krish{
-            width: 30%;
-        }
-        .back {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 1%;
-        }
-
-        .back input {
-            display: none;
-        }
-
-        .back i {
-            background-color: #000;
-            color: white;
-            font-size: 50px;
-            border-radius: 5px;
-        }
-
-        .back i:hover {
-            background-color: gray;
-            color: #000;
-        }
-
-        .p5 {
-            margin-top: 2%;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        /* ======++++++Meadia_Query++++++===== */
-        /* =========== Animations =========== */
-        .page1,
-        .about {
-            animation: fadeUp 1s ease-in-out;
-        }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(-200px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* =========== Responsive Styles =========== */
-
-        /* ----- 1024px ----- */
-        @media (max-width:1024px) {
-            .pro p {
-                top: -1%;
-            }
-
-            .b {
-                height: 6vh;
-            }
-
-            .navigations {
-                margin-right: 19%;
-            }
-        }
-
-        /* ----- 768px ----- */
-        @media (max-width:768px) {
-            .head {
-                flex-direction: column;
-            }
-
-            .navigations {
-                margin-left: 15%;
-                margin-bottom: 2%;
-            }
-            .details{
-                margin-left: 30%;
-            }
-            .down-button {
-                width: 46%;
-            }
-            
-            .krish {
-                width: 210px;
-            }
-
-            .p4 {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .project {
-                flex-direction: column;
-            }
-
-            .project1 {
-                margin: auto;
-                max-width: 90%;
-            }
-
-            .btn {
-                width: 30%;
-            }
-
-            .b {
-                width: 100%;
-                height: 6vh;
-            }
-
-            .hero2 {
-                flex-direction: column;
-            }
-
-            .abt-2 img {
-                margin-left: 32%;
-                width: 35%;
-                margin-bottom: 10%;
-            }
-        }
-
-        
-
-        /* ----- 425px ----- */
-        @media (max-width:425px) {
-
-            .project,
-            .achievements {
-                flex-direction: column;
-            }
-
-            .project1 {
-                width: 100%;
-            }
-
-            .btn {
-                width: 35%;
-            }
-
-            .a input {
-                width: 100%;
-            }
-
-            .pro p,
-            .nav a {
-                font-size: 14px;
-            }
-
-            .navigations {
-                margin-left: 12%;
-            }
-
-            .nav1 {
-                display: none;
-            }
-
-
-            .details {
-                margin-left: 5%;
-            }
-
-            .a {
-                width: 90%;
-                margin-left: 5%;
-            }
-            .hero,.about,.contact{
-                max-width:95%;
-            }
-            
-            .project,.achievements{
-                max-width: 85%;
-                padding: 5%;
-            }
-        }
-
-        /* ----- 375px ----- */
-        @media (max-width:375px) {
-            .hero h1 {
-                font-size: large;
-            }
-
-            .p5 {
-                flex-direction: column;
-            }
-
-            .details p {
-                font-size: 13px;
-            }
-            .down-button{
-                width: 50%;
-            }
-        }
-
-        /* ----- 320px ----- */
-        @media (max-width:320px) {
-            .navigations {
-                margin-left: 6%;
-            }
-
-            .btn1 {
-                width: 100%;
-            }
-
-            .btn {
-                width: 37vw;
-                height: 3%;
-            }
-
-            .Profile p {
-                font-size: 17px;
-            }
-
-            .nav1 {
-                display: none;
-            }
-
-            .down-button {
-                width: 60%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Header</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Media Queries for Responsiveness */
+    @media(min-width:1500px) {
+      .sidebar :first-child {
+        margin-top: 405%;
+      }
+    }
+
+    /* Tablets and small laptops */
+    @media (max-width: 1024px) {
+      .main {
+        padding: 30px;
+        margin-left: 70px;
+      }
+
+      .profile-pic {
+        width: 180px;
+        height: 180px;
+      }
+
+      .name {
+        font-size: 2.2rem;
+      }
+    }
+
+    /* Tablets in portrait mode */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 50px;
+      }
+
+      .main {
+        margin-left: 60px;
+        padding: 20px;
+      }
+
+      .profile-pic {
+        width: 160px;
+        height: 160px;
+      }
+
+      .name {
+        font-size: 2rem;
+      }
+
+      .tagline {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Large smartphones */
+    @media (max-width: 600px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        justify-content: space-around;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0;
+        padding: 0;
+      }
+
+      .sidebar :first-child {
+        margin-top: 0;
+      }
+
+      .sidebar a {
+        margin: 0;
+        padding: 15px 0;
+      }
+
+      .main {
+        margin-left: 0;
+        margin-bottom: 60px;
+        padding: 30px 20px;
+      }
+
+      .profile-pic {
+        width: 140px;
+        height: 140px;
+      }
+
+      .name {
+        font-size: 1.8rem;
+      }
+
+      .tagline {
+        font-size: 1rem;
+      }
+
+      .social-icons {
+        gap: 15px;
+      }
+
+      .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Small smartphones */
+    @media (max-width: 480px) {
+      .main {
+        padding: 25px 15px;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+
+      .name {
+        font-size: 1.6rem;
+      }
+
+      .tagline {
+        font-size: 0.9rem;
+      }
+
+      .resume {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+
+      .social-icons {
+        gap: 12px;
+      }
+
+      .social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+      }
+    }
+
+    /* Very small smartphones */
+    @media (max-width: 360px) {
+      .main {
+        padding: 20px 10px;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+
+      .name {
+        font-size: 1.4rem;
+      }
+
+      .tagline {
+        font-size: 0.85rem;
+      }
+
+      .resume {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+      }
+
+      .social-icons {
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <!-- ================Header & Navigation================= -->
-    <header>
-        <div class="head" id="index">
-            <div class="krish">
-                <a href="index.html" class="Profile">
-                    <div class="pro"><img src="Assets/img.jpg" alt="My Profile"></div>
-                    <div class="p">
-                        <p><span>K</span>rishnakumar</p>
-                    </div>
-                </a>
-            </div>
-            <div class="navigations">
-                <div class="nav nav1"><a href="index.html">Home</a></div>
-                <div class="nav nav2"><a href="#about">About</a></div>
-                <div class="nav nav3"><a href="#project">Project</a></div>
-                <div class="nav nav4"><a href="#achievements">Achievements</a></div>
-                <div class="nav nav5"><a href="#contact">Contact</a></div>
-            </div>
-        </div>
-    </header>
-    <!-- ====================Home Page====================== -->
-    <div class="page1">
-        <section>
-            <div class="hero">
-                <h1>Krishnakumar</h1>
-                <h3>A Passionate Web Developer & Designer</h3>
-                <a href="#project" style="color: rgb(0, 0, 0);margin-bottom: 5%;"><input type="submit"
-                        value="          View My Projects          " class="btn1" style="color: black;"></a>
 
-            </div>
-        </section>
+  <!-- Background video -->
+  <video autoplay muted loop playsinline>
+    <source src="Assets/m.mp4" type="video/mp4">
+    <!-- fallback -->
+    <!-- Your browser does not support the video tag. -->
+  </video>
+  <div class="overlay"></div>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <a href="project.html"><i class="fas fa-project-diagram icon-card"></i> </i>
+      <a href="achievements.html"><i class="fas fa-trophy icon-card"></i></a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+    <div class="profile-pic">
+      <img src="Assets/img.jpg" alt="Profile Picture">
     </div>
-    <!-- +++++++++++++About Page++++++++++++++ -->
-    <div class="about1">
-        <h1>About Me</h1>
-    </div>
-    <div class="about" id="about">
+    <h1 class="name">Krishnakumar</h1>
+    <p class="tagline">Full Stack Web Developer</p>
+    <a href="Assets/Krish resume.pdf" download="Krishnakumar.resume" class="resume">Download CV ⤓</a>
 
-        <div class="hero2">
-            <div class="abt-2">
-                <img src="Assets/my.png" alt="Me">
-            </div>
-            <div class="p">
-                <p>Hi, I'm <strong>Krishnakumar</strong> — a passionate Full Stack Developer who enjoys crafting modern,
-                    efficient, and user-focused web applications. I thrive on turning ideas into scalable digital
-                    solutions through clean and maintainable code.Beyond coding, I’m curious by nature — exploring
-                    design, automation, and emerging technologies. I love blending creativity and logic to build
-                    experiences that make an impact.</p>
-            </div>
-        </div>
-        <a href="about.html" style="color: rgb(0, 0, 0);" class="a"><input type="submit" value="Showmore ↗" class="btn1"
-                style="color: black;"></a>
-    </div>
-    <!-- ++++++++++++==Project==+++++++++++ -->
-    <h1 style="text-align: center;">PROJECTS</h1>
-    <div class="project" id="project">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
 
-        <!-- ++++Card-1++++ -->
-        <div class="project1">
-            <div class="p1"><a href="Assets/pothys.jpg"><img src="Assets/pothys.jpg" alt="pothysmart"></a>
-            </div>
-            <div class="p2">
-                <h3>Pothys Mart Website</h3>
-            </div>
-            <div class="p3">
-                <p>Pothys Mart Website were clonned using HTML and CSS it is Responsive website</p>
-            </div>
-            <div class="p5">
-                <a href="https://krishnakumarsdckap-dot.github.io/Pothys/" target="_blank"><input type="submit"
-                        class="b" value="Page Link"></a>
-                <a href="https://github.com/krishnakumarsdckap-dot/Pothys.git" target="_blank"><input type="submit"
-                        class="b" value="GitHub Link"></a>
-            </div>
-        </div>
-        <!-- +++Card-2+++ -->
-        <div class="project1">
-            <div class="p1"><a href="Assets/sunny.png"><img src="Assets/sunny.png" alt=""></a></div>
-            <div class="p2">
-                <h3>Sunny Cafe</h3>
-            </div>
-            <div class="p3">
-                <p>Sunny Cafe Task Using Languages HTML and CSS it is also Responsive website</p>
-            </div>
-            <div class="p5">
-                <a href="https://krishnakumarsdckap-dot.github.io/Sunny_Cafe/" target="_blank"><input type="submit"
-                        class="b" value="Page Link"></a>
-                <a href="https://github.com/krishnakumarsdckap-dot/Sunny_Cafe.git" target="_blank"><input type="submit"
-                        class="b" value="GitHub Link"></a>
-            </div>
-        </div>
-        <a href="project.html" style="color: rgb(0, 0, 0);"><input type="submit" value="          Showmore ↗          "
-                class="btn1" style="margin-bottom: -5%;color: black;"></a>
+      <a href="https://github.com/krishnakumarsdckap-dot" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
 
+      <a href="https://x.com/Krish06052008" target="_blank">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+
+      <a
+        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsdBqKtlkhWNPrKdnfnTsKvqgfvghkRXdGSHbHnKZPBLJKHjLnKQRfXqvVJtbjhhtzJpphVL">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
     </div>
 
-    <h1 style="text-align: center;">ACHIEVEMENTS</h1>
-    <div class="achievements" id="achievements">
-
-        <!-- ++++Card-1++++ -->
-        <div class="project1">
-            <div class="p1"><a href="Assets/nandhan.jpg"><img src="Assets/nandhan.jpg" alt="I"></a></div>
-
-            <div class="p2">
-                <h3>First rank in I standard</h3>
-            </div>
-            <div class="p3">
-                <p>I studied in B.K.M.School thiruporur,I get First rank in my first standard</p>
-            </div>
-            <div class="p4">
-                <a href="Assets/nandhan.jpg"><input type="submit" value="View" class="b"></a>
-            </div>
-        </div>
-        <!-- ++++Card-2++++ -->
-        <div class="project1">
-            <div class="p1"><a href="Assets/iam.jpg"><img src="Assets/iam.jpg" alt="iam"></a></div>
-
-            <div class="p2">
-                <h3>Firstplace in tournament</h3>
-            </div>
-            <div class="p3">
-                <p>First place in Silambam tournament which was conducted on the Jeppiar college</p>
-            </div>
-            <div class="p4">
-                <a href="Assets/iam.jpg"><input type="submit" value="View" class="b"></a>
-            </div>
-        </div>
-        <a href="achievements.html" style="color: rgb(0, 0, 0);"><input type="submit"
-                value="          Showmore ↗          " class="btn1" style="margin-bottom: -5%;color: black;"></a>
-
-    </div>
-
-
-    <!-- +++++=====Contact=====+++++ -->
-    <h1>Contact Me</h1>
-    <div class="contact" id="contact">
-        <div class="details">
-            <p>Email:<b><a
-                        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtDkwWqPhpzSxtbzczTpHnbKRXKNZtZpPPjTNdPKgVwNjgrQHdRvlZvsnbpfLHLMDPhVCPQq">krish06kumars@gmail.com</a></b>
-            </p>
-            <p>Connect: <b><a href="https://github.com/krishnakumarsdckap-dot"> GitHub</a></b></p>
-            <p>Phone: <b><a href="tel:+91 88070244066">+91 88070244066</a></b></p>
-            <a href="contact.html" style="color: rgb(0, 0, 0);width: 25%;"><input type="submit"
-                    value="Contact ↗" class="btn1" style="margin-bottom: 5%;margin-top: 5%;  color: black;"></a>
-
-        </div>
-    </div>
-    <div class="back">
-        <a href="#index"><input type="submit" value=""><i class="fa fa-arrow-up"></i></a>
-    </div>
-    <!-- ==========================Footer========================= -->
-    <footer>
-        <div class="social-icons">
-            <a href="https://x.com/Krish06052008" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/krish_ram_twinz/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61578237284301" target="_blank"><i
-                    class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/krishnakumar-s-627582378/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-        </div>
-        <div style="margin-top: 2%;">
-            &COPY; Copy Writted @ 2025 By K₹!$H
-        </div>
-    </footer>
+  </div>
 </body>
 
 </html>
