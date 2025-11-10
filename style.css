@@ -325,6 +325,9 @@ textarea:focus {
     .sidebar :first-child {
         margin-top: 405%;
     }
+    .Certificate {
+        padding-top: 2%;
+    }
 }
 
 /* Tablets and small laptops */
